@@ -1,0 +1,17 @@
+{
+  "links": {
+    "users": "Lietotāji"
+  },
+  "labels": {
+    "Access": "Piekļuve",
+    "Create PortalRole": "Izveidot lomu portālā",
+    "Scope Level": "Tvēruma līmenis",
+    "Field Level": "Lauka līmenis"
+  },
+  "fields": {
+    "exportPermission": "Eksportēt atļauju",
+    "massUpdatePermission": "Masu atjaunināšanas atļauja",
+    "data": "Dati",
+    "fieldData": "Lauka dati"
+  }
+}

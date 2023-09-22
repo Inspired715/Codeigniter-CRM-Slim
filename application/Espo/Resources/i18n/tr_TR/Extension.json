@@ -1,0 +1,16 @@
+{
+  "fields": {
+    "name": "İsim",
+    "version": "Sürüm",
+    "description": "Açıklama",
+    "isInstalled": "Yüklendi",
+    "checkVersionUrl": "Yeni sürüm kontrol URL'i"
+  },
+  "labels": {
+    "Uninstall": "Kaldır",
+    "Install": "Yükle"
+  },
+  "messages": {
+    "uninstalled": "{name} eklentisi silindi"
+  }
+}

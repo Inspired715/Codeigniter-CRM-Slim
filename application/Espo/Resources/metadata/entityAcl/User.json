@@ -1,0 +1,101 @@
+{
+    "fields": {
+        "userName": {
+            "nonAdminReadOnly": true
+        },
+        "apiKey": {
+            "onlyAdmin": true,
+            "readOnly": true,
+            "nonAdminReadOnly": true
+        },
+        "password": {
+            "internal": true,
+            "nonAdminReadOnly": true
+        },
+        "passwordConfirm": {
+            "internal": true,
+            "nonAdminReadOnly": true
+        },
+        "authLogRecordId": {
+            "forbidden": true
+        },
+        "authMethod": {
+            "onlyAdmin": true
+        },
+        "secretKey": {
+            "readOnly": true,
+            "onlyAdmin": true
+        },
+        "isActive": {
+            "nonAdminReadOnly": true
+        },
+        "emailAddress": {
+            "nonAdminReadOnly": true
+        },
+        "teams": {
+            "nonAdminReadOnly": true
+        },
+        "roles": {
+            "nonAdminReadOnly": true
+        },
+        "portals": {
+            "nonAdminReadOnly": true
+        },
+        "portalRoles": {
+            "nonAdminReadOnly": true
+        },
+        "contact": {
+            "nonAdminReadOnly": true
+        },
+        "workingTimeCalendar": {
+            "nonAdminReadOnly": true
+        },
+        "layoutSet": {
+            "onlyAdmin": true
+        },
+        "accounts": {
+            "nonAdminReadOnly": true
+        },
+        "type": {
+            "nonAdminReadOnly": true
+        },
+        "auth2FA": {
+            "onlyAdmin": true
+        },
+        "userData": {
+            "forbidden": true
+        },
+        "deleteId": {
+            "forbidden": true
+        }
+    },
+    "links": {
+        "teams": {
+            "nonAdminReadOnly": true
+        },
+        "roles": {
+            "onlyAdmin": true
+        },
+        "workingTimeRanges": {
+            "nonAdminReadOnly": true
+        },
+        "portalRoles": {
+            "onlyAdmin": true
+        },
+        "accounts": {
+            "onlyAdmin": true
+        },
+        "defaultTeam": {
+            "onlyAdmin": true
+        },
+        "dashboardTemplate": {
+            "onlyAdmin": true
+        },
+        "preferences": {
+            "onlyAdmin": true
+        },
+        "userData": {
+            "forbidden": true
+        }
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "params": [
+        {
+            "name": "required",
+            "type": "bool",
+            "default": false
+        },
+        {
+            "name": "typeList",
+            "type": "array",
+            "default": [
+                "Mobile",
+                "Office",
+                "Home",
+                "Fax",
+                "Other"
+            ],
+            "view": "views/admin/field-manager/fields/options"
+        },
+        {
+            "name": "defaultType",
+            "type": "enum",
+            "default": "Mobile",
+            "view": "views/admin/field-manager/fields/phone/default"
+        },
+        {
+            "name": "audited",
+            "type": "bool"
+        }
+    ],
+    "actualFields": [
+        "isOptedOut",
+        "isInvalid",
+        "",
+        "data"
+    ],
+    "notActualFields": [],
+    "fields": {
+        "isOptedOut": {
+            "type": "bool",
+            "notStorable": true,
+            "layoutDetailDisabled": true,
+            "layoutDefaultSidePanelDisabled": true,
+            "mergeDisabled": true,
+            "customizationDefaultDisabled": true,
+            "customizationReadOnlyDisabled": true,
+            "customizationInlineEditDisabledDisabled": true
+        },
+        "isInvalid": {
+            "type": "bool",
+            "notStorable": true,
+            "layoutDetailDisabled": true,
+            "layoutDefaultSidePanelDisabled": true,
+            "mergeDisabled": true,
+            "customizationDefaultDisabled": true,
+            "customizationReadOnlyDisabled": true,
+            "customizationInlineEditDisabledDisabled": true
+        }
+    },
+    "converterClassName": "Espo\\Core\\Utils\\Database\\Orm\\FieldConverters\\Phone",
+    "validationList": [
+        "required",
+        "valid",
+        "maxLength"
+    ],
+    "mandatoryValidationList": [
+        "valid",
+        "maxLength"
+    ],
+    "notCreatable": true,
+    "filter": true,
+    "fieldDefs": {
+        "notStorable": true
+    },
+    "translatedOptions": true,
+    "textFilter": true,
+    "personalData": true,
+    "valueFactoryClassName": "Espo\\Core\\Field\\PhoneNumber\\PhoneNumberGroupFactory",
+    "attributeExtractorClassName": "Espo\\Core\\Field\\PhoneNumber\\PhoneNumberGroupAttributeExtractor"
+}

@@ -1,0 +1,15 @@
+{
+    "fields": {
+        "id": {
+            "type": "id",
+            "dbType": "string",
+            "maxLength": 24
+        },
+        "data": {
+            "type": "jsonObject"
+        },
+        "enabled": {
+            "type": "bool"
+        }
+    }
+}

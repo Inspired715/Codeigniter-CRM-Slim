@@ -1,0 +1,29 @@
+{
+    "fields": {
+        "id": {
+            "type": "id",
+            "dbType": "bigint",
+            "autoincrement": true
+        },
+        "entity": {
+            "type": "linkParent"
+        },
+        "import": {
+            "type": "link"
+        },
+        "isImported": {
+            "type": "bool"
+        },
+        "isUpdated": {
+            "type": "bool"
+        },
+        "isDuplicate": {
+            "type": "bool"
+        }
+    },
+    "indexes": {
+        "entityImport": {
+            "columns": ["importId", "entityType"]
+        }
+    }
+}

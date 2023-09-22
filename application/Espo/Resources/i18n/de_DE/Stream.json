@@ -1,0 +1,16 @@
+{
+  "messages": {
+    "infoMention": "Geben Sie **@username** ein, um den Benutzer im Beitrag zu erwähnen.",
+    "infoSyntax": "Verfügbare Markdown-Syntax",
+    "couldNotAddFollowerUserHasNoAccessToStream": "Der Benutzer '{userName}' konnte nicht zu den Abonnenten hinzugefügt werden. Der Benutzer hat keinen 'Ereignis'-Zugriff auf den Datensatz."
+  },
+  "syntaxItems": {
+    "code": "Code",
+    "multilineCode": "mehrzeiliger Code",
+    "strongText": "Fettschrift",
+    "emphasizedText": "Hervorgehobener Text",
+    "deletedText": "gelöschter Text",
+    "blockquote": "Zitat",
+    "link": "Link"
+  }
+}

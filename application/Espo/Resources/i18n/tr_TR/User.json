@@ -1,0 +1,119 @@
+{
+  "fields": {
+    "name": "İsim",
+    "userName": "Kullanıcı Adı",
+    "title": "Başlık",
+    "isAdmin": "Yönetici",
+    "defaultTeam": "Varsayılan Takım",
+    "emailAddress": "Eposta",
+    "phoneNumber": "Telefon",
+    "roles": "Görevler",
+    "portals": "Portallar",
+    "portalRoles": "Portal Rolleri",
+    "teamRole": "Pozisyon ",
+    "password": "Şifre",
+    "currentPassword": "Şuan ki Şifre",
+    "passwordConfirm": "Şifreyi Doğrulayın",
+    "newPasswordConfirm": "Yeni şifreyi onayla",
+    "avatar": "Resim",
+    "isActive": "Aktif",
+    "isPortalUser": "Portal kullanıcısı mı",
+    "contact": "İletişim",
+    "accounts": "Hesaplar",
+    "account": "Hesap (Birincil)",
+    "sendAccessInfo": "Kullanıcıya Erişim Bilgisiyle E-posta Gönder",
+    "gender": "Cinsiyet",
+    "position": "Takım halinde pozisyon",
+    "ipAddress": "IP Adresi",
+    "passwordPreview": "Şifre Ön İzleme",
+    "lastAccess": "Son Erişim",
+    "type": "Tip",
+    "apiKey": "API Anahtarı",
+    "secretKey": "Gizli Kelime",
+    "authMethod": "Kimlik Doğrulama Yöntemi",
+    "yourPassword": "Geçerli şifreniz",
+    "dashboardTemplate": "Pano Şablonu",
+    "auth2FAMethod": "2FA Yöntemi",
+    "layoutSet": "Düzen Kümesi"
+  },
+  "links": {
+    "teams": "Takımlar",
+    "roles": "Görevler",
+    "notes": "Notlar",
+    "portals": "Portallar",
+    "portalRoles": "Portal Rolleri",
+    "contact": "Temas",
+    "accounts": "Hesaplar",
+    "account": "Hesap (Birincil)",
+    "tasks": "Görevler",
+    "defaultTeam": "Varsayılan Takım",
+    "dashboardTemplate": "Pano Şablonu",
+    "layoutSet": "Düzen Kümesi"
+  },
+  "labels": {
+    "Create User": "Kullanıcı Oluştur",
+    "Access": "Giriş",
+    "Preferences": "Seçenekler",
+    "Teams and Access Control": "Takımlar ve Erişim Kontrolü",
+    "Forgot Password?": "Şifremi unuttum?",
+    "Password Change Request": "Şifre Değiştirme İsteği",
+    "Email Address": "E-Posta Adresi ",
+    "External Accounts": "Dış Hesaplar",
+    "Email Accounts": "E-posta hesapları",
+    "Portal": "Internet anakapısı",
+    "Create Portal User": "Portal Kullanıcısı Yarat",
+    "Proceed w/o Contact": "İletişimsiz olarak devam et",
+    "Generate New API Key": "Yeni API Anahtarı Oluştur",
+    "Generate New Password": "Yeni Şifre Oluştur",
+    "Code": "Kod",
+    "Back to login form": "Giriş sayfasına geri dön",
+    "Requirements": "Gereksinimler",
+    "Security": "Güvenlik",
+    "Reset 2FA": "2FA'yı sıfırla"
+  },
+  "tooltips": {
+    "defaultTeam": "Bu kullanıcı tarafından oluşturulan tüm kayıtlar varsayılan olarak bu takımla ilişkilendirilir.",
+    "userName": "Harf az, sayı 0-9, nokta, tire, @ işaret ve alt çizgiye izin verilir.",
+    "isAdmin": "Yönetici kullanıcısı her şeye erişebilir.",
+    "isActive": "İşaretlenmezse, kullanıcı giriş yapamaz.",
+    "teams": "Bu kullanıcının bağlı olduğu takımlar. Erişim kontrol seviyesi takımın rollerinden devralınmıştır.",
+    "roles": "Ek erişim rolleri. Kullanıcı herhangi bir ekibe üye değilse veya bu kullanıcı için yalnızca erişim denetimi düzeyini genişletmeniz gerekiyorsa kullanın.",
+    "portalRoles": "Ek portal rolleri. Bu kullanıcı için erişim denetimi düzeyini yalnızca mülkten genişletmek için kullanın.",
+    "portals": "Bu kullanıcının erişebildiği portallar.",
+    "layoutSet": "Kullanıcı için varsayılanlar yerine belirli bir kümedeki düzenler uygulanacaktır."
+  },
+  "messages": {
+    "userCantBeEmpty": "Kullanıcı adı boş olamaz.",
+    "wrongUsernamePassword": "Yanlış kullanıcı adı / şifre",
+    "emailAddressCantBeEmpty": "E-posta Adresi boş olamaz",
+    "userNameEmailAddressNotFound": "Kullanıcı adı / e-posta adresi bulunamadı",
+    "forbidden": "Yasak, lütfen daha sonra deneyin",
+    "uniqueLinkHasBeenSent": "Benzersiz URL belirtilen e-posta adresine gönderilmiştir.",
+    "passwordChangedByRequest": "Şifre değiştirildi.",
+    "userNameExists": "Kullanıcı adı zaten var",
+    "passwordStrengthLength": "En az {length} karakter uzunluğunda olmalıdır.",
+    "passwordStrengthLetterCount": "En az {count} harf(ler) içermelidir.",
+    "passwordStrengthNumberCount": "En az {count} basamak içermelidir."
+  },
+  "boolFilters": {
+    "onlyMyTeam": "Yalnızca Ekibim"
+  },
+  "presetFilters": {
+    "active": "Aktif ",
+    "activePortal": "Portal Aktif"
+  },
+  "options": {
+    "gender": {
+      "": "Ayarlanmadı",
+      "Male": "Erkek",
+      "Female": "Kadın",
+      "Neutral": "Belirtilmedi"
+    },
+    "type": {
+      "regular": "Düzenli",
+      "admin": "Yönetici",
+      "system": "Sistem",
+      "super-admin": "Süper Admin"
+    }
+  }
+}

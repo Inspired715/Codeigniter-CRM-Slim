@@ -1,0 +1,21 @@
+{
+    "fields": {
+        "targetListIsOptedOut": {
+            "type": "bool",
+            "notStorable": true,
+            "readOnly": true,
+            "utility": true,
+            "fieldManagerParamList": []
+        }
+    },
+    "links": {
+        "targetLists": {
+            "type": "hasMany",
+            "entity": "TargetList",
+            "foreign": "users",
+            "columnAttributeMap": {
+                "optedOut": "targetListIsOptedOut"
+            }
+        }
+    }
+}

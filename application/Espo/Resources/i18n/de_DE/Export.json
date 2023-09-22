@@ -1,0 +1,24 @@
+{
+  "fields": {
+    "fieldList": "Feldliste",
+    "exportAllFields": "Exportieren alle Felder",
+    "xlsxRecordLinks": "Datensatzverknüpfungen",
+    "xlsxTitle": "Titel"
+  },
+  "options": {
+    "status": {
+      "Pending": "Ausstehend",
+      "Running": "In Bearbeitung",
+      "Success": "Erfolgreich",
+      "Failed": "Fehlgeschlagen"
+    }
+  },
+  "messages": {
+    "exportProcessed": "Export wurde verarbeitet. [Datei]({url}) herunterladen.",
+    "infoText": "Der Export wird im Leerlauf von cron verarbeitet. Es kann einige Zeit dauern, bis er abgeschlossen ist. Das Schließen dieses modalen Dialogs hat keinen Einfluss auf den Ausführungsprozess."
+  },
+  "tooltips": {
+    "xlsxLite": "Verbraucht viel weniger Speicher. Empfohlen, wenn eine große Anzahl von Datensätzen exportiert wird.",
+    "xlsxTitle": "Druckt eine Überschrift und das aktuelle Datum in der Kopfzeile."
+  }
+}

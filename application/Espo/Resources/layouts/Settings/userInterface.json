@@ -1,0 +1,38 @@
+[
+    {
+        "rows": [
+            [{"name": "companyLogo"}, {"name": "applicationName"}]
+        ],
+        "tabBreak": true,
+        "tabLabel": "$label:General"
+    },
+    {
+        "rows": [
+            [{"name": "theme"}, {"name": "userThemesDisabled"}],
+            [false, {"name": "avatarsDisabled"}]
+        ]
+    },
+    {
+        "rows": [
+            [{"name": "recordsPerPage"}, {"name": "recordsPerPageSelect"}],
+            [{"name": "recordsPerPageSmall"}, {"name": "recordsPerPageKanban"}],
+            [{"name": "displayListViewRecordCount"}, false]
+        ]
+    },
+    {
+        "rows": [
+            [{"name": "tabList"}, {"name": "quickCreateList"}],
+            [{"name": "scopeColorsDisabled"}, {"name": "tabColorsDisabled"}],
+            [{"name": "tabIconsDisabled"}, false]
+        ],
+        "tabBreak": true,
+        "tabLabel": "$label:Navbar"
+    },
+    {
+        "rows": [
+            [{"name": "dashboardLayout", "fullWidth": true}]
+        ],
+        "tabBreak": true,
+        "tabLabel": "$label:Dashboard"
+    }
+]

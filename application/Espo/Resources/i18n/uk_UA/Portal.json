@@ -1,0 +1,41 @@
+{
+  "fields": {
+    "name": "Ім'я",
+    "logo": "Лого",
+    "companyLogo": "Лого",
+    "portalRoles": "Ролі",
+    "isActive": "Активний",
+    "isDefault": "За замовчуванням",
+    "tabList": "Список вкладок",
+    "quickCreateList": "Список для швидкого створення",
+    "theme": "Тема",
+    "language": "Мова",
+    "dashboardLayout": "Макет панелі дашлетів",
+    "dateFormat": "Формат дати",
+    "timeFormat": "Формат часу",
+    "timeZone": "Часовий пояс",
+    "weekStart": "Перший день тижня",
+    "defaultCurrency": "Валюта за замовчуванням",
+    "customUrl": "Власний URL",
+    "customId": "Власний ID",
+    "layoutSet": "Набір макетів",
+    "authenticationProvider": "Провайдер автентифікації"
+  },
+  "links": {
+    "users": "Користувачі",
+    "portalRoles": "Ролі",
+    "notes": "Примітки",
+    "layoutSet": "Набір макетів",
+    "authenticationProvider": "Провайдер автентифікації"
+  },
+  "tooltips": {
+    "portalRoles": "Вказані ролі порталу будуть застосовуватись до всіх користувачів цього порталу.",
+    "layoutSet": "Надає можливість мати макети, що відрізняються від стандартних."
+  },
+  "labels": {
+    "Create Portal": "Створити портал",
+    "User Interface": "Інтерфейс користувача",
+    "General": "Загальне",
+    "Settings": "Налаштування"
+  }
+}

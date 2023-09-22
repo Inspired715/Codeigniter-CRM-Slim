@@ -1,0 +1,12 @@
+{
+  "layouts": {
+    "detailConvert": "Omzetten lead",
+    "listForAccount": "Lijst (Account)",
+    "listForContact": "Lijst (voor contact)"
+  },
+  "templates": {
+    "invitation": "Uitnodiging",
+    "reminder": "Herinnering",
+    "cancellation": "Annulering"
+  }
+}

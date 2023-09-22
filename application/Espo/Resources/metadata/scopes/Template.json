@@ -1,0 +1,13 @@
+{
+    "entity": true,
+    "layouts": false,
+    "tab": true,
+    "acl": true,
+    "aclLevelList": ["all", "team", "no"],
+    "aclPortal": true,
+    "aclPortalLevelList": ["all", "no"],
+    "aclPortalActionList": ["read"],
+    "customizable": false,
+    "importable": true,
+    "disabled": false
+}

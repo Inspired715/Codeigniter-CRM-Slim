@@ -1,0 +1,33 @@
+{
+    "options": {
+        "fields": {
+            "title": {
+                "type": "varchar"
+            },
+            "autorefreshInterval": {
+                "type": "enumFloat",
+                "options": [0, 0.5, 1, 2, 5, 10]
+            },
+            "url": {
+                "type": "url",
+                "required": true
+            }
+        },
+        "defaults": {
+            "autorefreshInterval": 0
+        },
+        "layout": [
+            {
+                "rows": [
+                    [
+                        {"name": "title"}
+                    ],
+                    [
+                        {"name": "url"},
+                        {"name": "autorefreshInterval"}
+                    ]
+                ]
+            }
+        ]
+    }
+}

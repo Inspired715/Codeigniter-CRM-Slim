@@ -1,0 +1,92 @@
+{
+  "labels": {
+    "Fields": "Campi",
+    "Relationships": "Relazioni",
+    "Schedule": "Programma",
+    "Layouts": "Layout"
+  },
+  "fields": {
+    "name": "Nome",
+    "type": "Tipo",
+    "labelSingular": "Etichetta Singolare",
+    "labelPlural": "Etichetta Plurale",
+    "stream": "Flusso Attività",
+    "label": "Etichetta",
+    "linkType": "Tipo Collegamento",
+    "entityForeign": "Entità esterna",
+    "linkForeign": "Collegamento Esterno",
+    "link": "Collegamento",
+    "labelForeign": "Label  esterna",
+    "sortBy": "Ordinamento Predefinito (campo)",
+    "sortDirection": "Ordinamento Predefinito (direzione)",
+    "relationName": "Secondo Nome Tabella",
+    "linkMultipleField": "Collegamento Multiplo Campi",
+    "linkMultipleFieldForeign": "Collegamento Multiplo Campi Esterno",
+    "disabled": "Disabilitato",
+    "textFilterFields": "Campi Filtro Testuale",
+    "audited": "Revisionato",
+    "auditedForeign": "Revisionato Esternamente",
+    "statusField": "Campo di Stato",
+    "color": "Colore",
+    "kanbanViewMode": "Vista Kanban",
+    "kanbanStatusIgnoreList": "Gruppi ignorati in vista Kanban",
+    "iconClass": "Icona",
+    "fullTextSearch": "Ricerca tutto il testo",
+    "countDisabled": "Disabilita il conteggio dei record",
+    "parentEntityTypeList": "Tipo Genitore Entità",
+    "foreignLinkEntityTypeList": "Collegamenti Esterni",
+    "entity": "Entità",
+    "updateDuplicateCheck": "Controllo duplicati durante l'aggiornamento",
+    "duplicateCheckFieldList": "Campi controllo duplicati",
+    "author": "Autore",
+    "module": "Modulo",
+    "version": "Versione"
+  },
+  "options": {
+    "type": {
+      "": "Nessuno",
+      "Person": "Persona",
+      "CategoryTree": "Albero delle Categorie",
+      "Event": "Evento",
+      "Company": "Azienda"
+    },
+    "linkType": {
+      "manyToMany": "Molti-a-molti",
+      "oneToMany": "Uno-a-Molti",
+      "manyToOne": "Molti-a-uno",
+      "parentToChildren": "Padre-a-Figlio",
+      "childrenToParent": "Figlio-a-Padre",
+      "oneToOneRight": "Uno-a-uno destra",
+      "oneToOneLeft": "Uno-a-uno sinistra"
+    },
+    "sortDirection": {
+      "asc": "Ascendente",
+      "desc": "Discendente"
+    }
+  },
+  "messages": {
+    "entityCreated": "L'Entità è stata creata",
+    "linkAlreadyExists": "Nome del collegamento in conflitto.",
+    "linkConflict": "Conflitto: collegamento o campo con lo stesso nome già esistente.",
+    "confirmRemove": "Sei sicuro di voler rimuovere questo tipo di entità dal sistema?",
+    "beforeSaveCustomScript": "Uno script chiamato ogni volta prima che un'entità venga salvata. Si usa per impostare i campi calcolati.",
+    "beforeSaveApiScript": "Uno script chiamato nelle richieste API di creazione e aggiornamento prima che un'entità venga salvata. Da utilizzare per la convalida personalizzata e il controllo dei duplicati.",
+    "nameIsAlreadyUsed": "Nome '{name}' è già in uso.",
+    "nameIsNotAllowed": "Nome '{name}' non permesso.",
+    "nameIsTooLong": "Nome troppo lungo."
+  },
+  "tooltips": {
+    "statusField": "Gli aggiornamenti a questo campo verranno registrati nel flusso attività.",
+    "textFilterFields": "Campi utilizzati dalla ricerca testuale.",
+    "stream": "Se l'entità ha un flusso attività.",
+    "disabled": "Spunta, se non hai bisogno di questa entità nel tuo sistema.",
+    "linkAudited": "La creazione di record correlati ed il collegamento con il record esistente verranno registrati nelle attività.",
+    "linkMultipleField": "Collegare un campo multiplo è una via pratica per modificare le relazioni. Non utilizzarlo se prevedi un elevato numero di record correlati.",
+    "entityType": "Base Plus - dispone di pannelli Attività, Storico e Compiti.\n\nEvento - disponibile nei pannelli Calendario ed Attività.",
+    "fullTextSearch": "È necessario eseguire la ricostruzione.",
+    "countDisabled": "Il numero totale non verrà visualizzato nella visualizzazione lista. Può ridurre il tempo di caricamento quando la tabella DB è grande.",
+    "optimisticConcurrencyControl": "Previene i conflitti.",
+    "duplicateCheckFieldList": "Quali campi controllare quando viene eseguito il controllo duplicati.",
+    "updateDuplicateCheck": "Esegui il controllo duplicati quando un record viene aggiornato."
+  }
+}

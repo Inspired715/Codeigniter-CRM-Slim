@@ -1,0 +1,73 @@
+{
+    "view": "views/dashlets/emails",
+    "aclScope": "Email",
+    "entityType": "Email",
+    "options": {
+        "fields": {
+            "title": {
+                "type": "varchar",
+                "required": true
+            },
+            "autorefreshInterval": {
+                "type": "enumFloat",
+                "options": [0, 0.5, 1, 2, 5, 10]
+            },
+            "displayRecords": {
+                "type": "enumInt",
+                "options": [3, 4, 5, 7, 10, 15, 20, 30]
+            },
+            "folder": {
+                "type": "enum",
+                "view": "views/dashlets/fields/emails/folder"
+            }
+        },
+        "defaults": {
+            "orderBy": "dateSent",
+            "order": "desc",
+            "displayRecords": 5,
+            "folder": null,
+            "expandedLayout": {
+                "rows": [
+                    [
+                        {
+                            "name": "subject",
+                            "link": true
+                        }
+                    ],
+                    [
+                        {
+                            "name": "dateSent",
+                            "view": "views/fields/datetime-short"
+                        },
+                        {
+                            "name": "personStringData",
+                            "view": "views/email/fields/person-string-data-for-expanded"
+                        }
+                    ]
+                ]
+            }
+        },
+        "layout": [
+            {
+                "rows": [
+                    [
+                        {"name": "title"}
+                    ],
+                    [
+                        {"name": "displayRecords"},
+                        {"name": "autorefreshInterval"}
+                    ],
+                    [
+                        {"name": "folder"},
+                        false
+                    ]
+                ]
+            }
+        ]
+    },
+    "accessDataList": [
+        {
+            "inPortalDisabled": true
+        }
+    ]
+}

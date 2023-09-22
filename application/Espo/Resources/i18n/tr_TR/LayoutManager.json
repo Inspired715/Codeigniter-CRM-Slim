@@ -1,0 +1,35 @@
+{
+  "fields": {
+    "width": "Genişlik (%)",
+    "link": "Bağlantı",
+    "notSortable": "Sıralanamaz ",
+    "align": "Hizala",
+    "panelName": "Panel Adı",
+    "style": "Stil",
+    "sticked": "Yapışmış",
+    "isLarge": "Büyük yazı boyutu",
+    "dynamicLogicVisible": "Paneli görünür kılan koşullar"
+  },
+  "options": {
+    "align": {
+      "left": "Sol",
+      "right": "Sağ"
+    },
+    "style": {
+      "default": "Varsayılan",
+      "success": "Başarılı ",
+      "danger": "Uyarı",
+      "info": "Bilgi",
+      "warning": "Uyarı",
+      "primary": "Öncelikli"
+    }
+  },
+  "labels": {
+    "New panel": "Yeni Pano",
+    "Layout": "Görünüm"
+  },
+  "messages": {
+    "alreadyExists": "`{name}` düzeni zaten var.",
+    "createInfo": "Özel liste düzenleri, ilişki panelleri tarafından kullanılabilir."
+  }
+}

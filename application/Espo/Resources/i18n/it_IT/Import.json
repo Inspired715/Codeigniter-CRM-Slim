@@ -1,0 +1,101 @@
+{
+  "labels": {
+    "Revert Import": "Ripristina import",
+    "Return to Import": "Ritorna a import",
+    "Run Import": "Esegui import",
+    "Back": "Indietro",
+    "Field Mapping": "Mapping Campo",
+    "Default Values": "Valori Predefiniti",
+    "Add Field": "Aggiungi Campo",
+    "Created": "Creato",
+    "Updated": "Aggiornati",
+    "Result": "Risultato",
+    "Show records": "Mostra i record",
+    "Remove Duplicates": "Rimuovi Duplicati",
+    "importedCount": "Importati (conteggio)",
+    "duplicateCount": "Duplicati (conteggio)",
+    "updatedCount": "Aggiornati (conteggio)",
+    "Create Only": "Crea Solamente",
+    "Create and Update": "Crea & Aggiorna",
+    "Update Only": "Aggiorna solamente",
+    "Update by": "Aggiorna da",
+    "Set as Not Duplicate": "Imposta come non duplicati",
+    "First Row Value": "Primo valore di riga",
+    "Skip": "Salta",
+    "Header Row Value": "Intestazione riga",
+    "Field": "Campo",
+    "What to Import?": "Cosa Importare?",
+    "Entity Type": "Tipo di entità",
+    "What to do?": "Cosa fare?",
+    "Properties": "Proprietà",
+    "Header Row": "Intestazione riga",
+    "Person Name Format": "Formato Nome Persona",
+    "Field Delimiter": "Delimitatore di Campo",
+    "Date Format": "Formato Data",
+    "Decimal Mark": "Marcatore decimali",
+    "Text Qualifier": "Qualificatore di Testo",
+    "Time Format": "Formato Ora",
+    "Currency": "Valuta",
+    "Preview": "Anteprima",
+    "Next": "Avanti",
+    "Double Quote": "Virgolette",
+    "Single Quote": "Virgolette Singole",
+    "Imported": "Importati",
+    "Duplicates": "Duplicati",
+    "Skip searching for duplicates": "Salta la ricerca per duplicati",
+    "Timezone": "Fuso Orario",
+    "Remove Import Log": "Rimuovi Log di Import",
+    "New Import": "Nuova importazione",
+    "Import Results": "Risultati Importazioni",
+    "Silent Mode": "Modalità silenziosa",
+    "New import with same params": "Nuovo import con gli stessi parametri",
+    "Run Manually": "Avvia Manualmente",
+    "Export": "Esporta"
+  },
+  "messages": {
+    "utf8": "Dovrebbe avere codifica UTF-8",
+    "duplicatesRemoved": "Duplicati rimossi",
+    "inIdle": "Esegui quando inattivo (per grandi dati, via cron)",
+    "revert": "Questa operazione rimuoverà Tutti i record importati definitivamente",
+    "removeDuplicates": "Questa operazione rimuoverà tutti i record importati riconosciuti come duplicati",
+    "confirmRevert": "Questa operazione rimuoverà tutti i record importati definitivamente. Sei sicuro?",
+    "confirmRemoveDuplicates": "Questo rimuoverà permanentemente tutti i record importati che sono stati riconosciuti come duplicati. Sei sicuro?",
+    "removeImportLog": "Questo rimuoverà il registro di importazione. Tutti i record importati verranno mantenuti. Usalo se sei sicuro che l'importazione va bene.",
+    "confirmRemoveImportLog": "Così facendo rimuoverai il log di importazione. Tutti i record importati rimarranno a sistema. Non sarai in grado di ripristinare i risultati di importazione. Sei sicuro?",
+    "noErrors": "Nessun errore.",
+    "importRunning": "Importazione in corso..."
+  },
+  "fields": {
+    "entityType": "Tipo di entità",
+    "imported": "Record Importati",
+    "duplicates": "Record duplicati",
+    "updated": "Record aggiornati",
+    "status": "Stato"
+  },
+  "options": {
+    "status": {
+      "Failed": "Fallito",
+      "In Process": "In corso",
+      "Complete": "Completo",
+      "Pending": "In Attesa"
+    },
+    "personNameFormat": {
+      "f l": "Nome",
+      "l f": "Cognome",
+      "f m l": "Nome Secondo Nome Cognome",
+      "l f m": "Cognome Nome Secondo Nome",
+      "l, f": "Cognome, Nome"
+    }
+  },
+  "strings": {
+    "commandToRun": "Comando da eseguire (da CLI)",
+    "saveAsDefault": "Salva come predefinito"
+  },
+  "tooltips": {
+    "manualMode": "Se questa opzione è selezionata, sarà necessario eseguire l'importazione manualmente da CLI. Il comando verrà mostrato dopo aver impostato l'importazione.",
+    "silentMode": "La maggior parte degli script after-save verrà saltata, le note dello stream non verranno create. L'importazione sarà più veloce."
+  },
+  "links": {
+    "errors": "Errori"
+  }
+}

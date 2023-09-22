@@ -1,0 +1,557 @@
+[
+    {
+        "route": "/",
+        "method": "get",
+        "params": {
+            "controller": "ApiIndex",
+            "action": "index"
+        }
+    },
+    {
+        "route": "/App/user",
+        "method": "get",
+        "actionClassName": "Espo\\Tools\\App\\Api\\GetUser"
+    },
+    {
+        "route": "/App/destroyAuthToken",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\App\\Api\\PostDestroyAuthToken"
+    },
+    {
+        "route": "/Metadata",
+        "method": "get",
+        "params": {
+            "controller": "Metadata"
+        }
+    },
+    {
+        "route": "/I18n",
+        "method": "get",
+        "params": {
+            "controller": "I18n"
+        },
+        "noAuth": true
+    },
+    {
+        "route": "/Settings",
+        "method": "get",
+        "params": {
+            "controller": "Settings"
+        },
+        "noAuth": true
+    },
+    {
+        "route": "/Settings",
+        "method": "patch",
+        "params": {
+            "controller": "Settings"
+        }
+    },
+    {
+        "route": "/Settings",
+        "method": "put",
+        "params": {
+            "controller": "Settings"
+        }
+    },
+    {
+        "route": "/Stream",
+        "method": "get",
+        "params": {
+            "controller": "Stream",
+            "action": "list",
+            "scope": "User"
+        }
+    },
+    {
+        "route": "/GlobalSearch",
+        "method": "get",
+        "actionClassName": "Espo\\Tools\\GlobalSearch\\Api\\Get"
+    },
+    {
+        "route": "/LeadCapture/:apiKey",
+        "method": "post",
+        "params": {
+            "controller": "LeadCapture",
+            "action": "leadCapture",
+            "apiKey": ":apiKey"
+        },
+        "noAuth": true
+    },
+    {
+        "route": "/LeadCapture/:apiKey",
+        "method": "options",
+        "params": {
+            "controller": "LeadCapture",
+            "action": "leadCapture",
+            "apiKey": ":apiKey"
+        },
+        "noAuth": true
+    },
+    {
+        "route": "/:controller/action/:action",
+        "method": "post",
+        "params": {
+            "controller": ":controller",
+            "action": ":action"
+        }
+    },
+    {
+        "route": "/:controller/action/:action",
+        "method": "put",
+        "params": {
+            "controller": ":controller",
+            "action": ":action"
+        }
+    },
+    {
+        "route": "/:controller/action/:action",
+        "method": "get",
+        "params": {
+            "controller": ":controller",
+            "action": ":action"
+        }
+    },
+    {
+        "route": "/:controller/layout/:name",
+        "method": "get",
+        "params": {
+            "controller": "Layout",
+            "scope": ":controller"
+        }
+    },
+    {
+        "route": "/:controller/layout/:name",
+        "method": "put",
+        "params": {
+            "controller": "Layout",
+            "scope": ":controller"
+        }
+    },
+    {
+        "route": "/:controller/layout/:name/:setId",
+        "method": "put",
+        "params": {
+            "controller": "Layout",
+            "scope": ":controller"
+        }
+    },
+    {
+        "route": "/Admin/rebuild",
+        "method": "post",
+        "params": {
+            "controller": "Admin",
+            "action": "rebuild"
+        }
+    },
+    {
+        "route": "/Admin/clearCache",
+        "method": "post",
+        "params": {
+            "controller": "Admin",
+            "action": "clearCache"
+        }
+    },
+    {
+        "route": "/Admin/jobs",
+        "method": "get",
+        "params": {
+            "controller": "Admin",
+            "action": "jobs"
+        }
+    },
+    {
+        "route": "/Admin/fieldManager/:scope/:name",
+        "method": "get",
+        "params": {
+            "controller": "FieldManager",
+            "action": "read",
+            "scope": ":scope",
+            "name": ":name"
+        }
+    },
+    {
+        "route": "/Admin/fieldManager/:scope",
+        "method": "post",
+        "params": {
+            "controller": "FieldManager",
+            "action": "create",
+            "scope": ":scope"
+        }
+    },
+    {
+        "route": "/Admin/fieldManager/:scope/:name",
+        "method": "put",
+        "params": {
+            "controller": "FieldManager",
+            "action": "update",
+            "scope": ":scope",
+            "name": ":name"
+        }
+    },
+    {
+        "route": "/Admin/fieldManager/:scope/:name",
+        "method": "patch",
+        "params": {
+            "controller": "FieldManager",
+            "action": "update",
+            "scope": ":scope",
+            "name": ":name"
+        }
+    },
+    {
+        "route": "/Admin/fieldManager/:scope/:name",
+        "method": "delete",
+        "params": {
+            "controller": "FieldManager",
+            "action": "delete",
+            "scope": ":scope",
+            "name": ":name"
+        }
+    },
+    {
+        "route": "/CurrencyRate",
+        "method": "get",
+        "actionClassName": "Espo\\Tools\\Currency\\Api\\Get"
+    },
+    {
+        "route": "/CurrencyRate",
+        "method": "put",
+        "actionClassName": "Espo\\Tools\\Currency\\Api\\PutUpdate"
+    },
+    {
+        "route": "/Action",
+        "method": "post",
+        "actionClassName": "Espo\\Core\\Action\\Api\\PostProcess"
+    },
+    {
+        "route": "/MassAction",
+        "method": "post",
+        "actionClassName": "Espo\\Core\\MassAction\\Api\\PostProcess"
+    },
+    {
+        "route": "/MassAction/:id/status",
+        "method": "get",
+        "actionClassName": "Espo\\Core\\MassAction\\Api\\GetStatus"
+    },
+    {
+        "route": "/MassAction/:id/subscribe",
+        "method": "post",
+        "actionClassName": "Espo\\Core\\MassAction\\Api\\PostSubscribe"
+    },
+    {
+        "route": "/Export",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\Export\\Api\\PostProcess"
+    },
+    {
+        "route": "/Export/:id/status",
+        "method": "get",
+        "actionClassName": "Espo\\Tools\\Export\\Api\\GetStatus"
+    },
+    {
+        "route": "/Export/:id/subscribe",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\Export\\Api\\PostSubscribe"
+    },
+    {
+        "route": "/Import",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\Import\\Api\\Post"
+    },
+    {
+        "route": "/Import/file",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\Import\\Api\\PostFile"
+    },
+    {
+        "route": "/Import/:id/revert",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\Import\\Api\\PostRevert"
+    },
+    {
+        "route": "/Import/:id/removeDuplicates",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\Import\\Api\\PostRemoveDuplicates"
+    },
+    {
+        "route": "/Import/:id/unmarkDuplicates",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\Import\\Api\\PostUnmarkDuplicates"
+    },
+    {
+        "route": "/Import/:id/exportErrors",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\Import\\Api\\PostExportErrors"
+    },
+    {
+        "route": "/Kanban/order",
+        "method": "put",
+        "actionClassName": "Espo\\Tools\\Kanban\\Api\\PutOrder"
+    },
+    {
+        "route": "/Kanban/:entityType",
+        "method": "get",
+        "actionClassName": "Espo\\Tools\\Kanban\\Api\\GetData"
+    },
+    {
+        "route": "/Attachment/file/:id",
+        "method": "get",
+        "actionClassName": "Espo\\Tools\\Attachment\\Api\\GetFile"
+    },
+    {
+        "route": "/Attachment/chunk/:id",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\Attachment\\Api\\PostChunk"
+    },
+    {
+        "route": "/Attachment/fromImageUrl",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\Attachment\\Api\\PostFromImageUrl"
+    },
+    {
+        "route": "/Attachment/copy/:id",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\Attachment\\Api\\PostCopy"
+    },
+    {
+        "route": "/EmailTemplate/:id/prepare",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\EmailTemplate\\Api\\PostPrepare"
+    },
+    {
+        "route": "/Email/:id/attachments/copy",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\Email\\Api\\PostAttachmentsCopy"
+    },
+    {
+        "route": "/Email/sendTest",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\Email\\Api\\PostSendTest"
+    },
+    {
+        "route": "/Email/inbox/read",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\Email\\Api\\PostInboxRead"
+    },
+    {
+        "route": "/Email/inbox/read",
+        "method": "delete",
+        "actionClassName": "Espo\\Tools\\Email\\Api\\DeleteInboxRead"
+    },
+    {
+        "route": "/Email/inbox/important",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\Email\\Api\\PostInboxImportant"
+    },
+    {
+        "route": "/Email/inbox/important",
+        "method": "delete",
+        "actionClassName": "Espo\\Tools\\Email\\Api\\DeleteInboxImportant"
+    },
+    {
+        "route": "/Email/inbox/inTrash",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\Email\\Api\\PostInboxInTrash"
+    },
+    {
+        "route": "/Email/inbox/inTrash",
+        "method": "delete",
+        "actionClassName": "Espo\\Tools\\Email\\Api\\DeleteInboxInTrash"
+    },
+    {
+        "route": "/Email/inbox/folders/:folderId",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\Email\\Api\\PostFolder"
+    },
+    {
+        "route": "/Email/inbox/notReadCounts",
+        "method": "get",
+        "actionClassName": "Espo\\Tools\\Email\\Api\\GetNotReadCounts"
+    },
+    {
+        "route": "/Email/insertFieldData",
+        "method": "get",
+        "actionClassName": "Espo\\Tools\\Email\\Api\\GetInsertFieldData"
+    },
+    {
+        "route": "/EmailAddress/search",
+        "method": "get",
+        "actionClassName": "Espo\\Tools\\EmailAddress\\Api\\GetSearch"
+    },
+    {
+        "route": "/User/:id/acl",
+        "method": "get",
+        "actionClassName": "Espo\\Tools\\UserSecurity\\Api\\GetUserAcl"
+    },
+    {
+        "route": "/UserSecurity/apiKey/generate",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\UserSecurity\\Api\\PostApiKeyGenerate"
+    },
+    {
+        "route": "/UserSecurity/password",
+        "method": "put",
+        "actionClassName": "Espo\\Tools\\UserSecurity\\Api\\PutPassword"
+    },
+    {
+        "route": "/UserSecurity/password/recovery",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\UserSecurity\\Api\\PostPasswordRecovery"
+    },
+    {
+        "route": "/UserSecurity/password/generate",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\UserSecurity\\Api\\PostPasswordGenerate"
+    },
+    {
+        "route": "/User/passwordChangeRequest",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\UserSecurity\\Api\\PostPasswordChangeRequest",
+        "noAuth": true
+    },
+    {
+        "route": "/User/changePasswordByRequest",
+        "method": "post",
+        "actionClassName": "Espo\\Tools\\UserSecurity\\Api\\PostChangePasswordByRequest",
+        "noAuth": true
+    },
+    {
+        "route": "/Oidc/authorizationData",
+        "method": "get",
+        "params": {
+            "controller": "Oidc",
+            "action": "authorizationData"
+        },
+        "noAuth": true
+    },
+    {
+        "route": "/Oidc/backchannelLogout",
+        "method": "post",
+        "params": {
+            "controller": "Oidc",
+            "action": "backchannelLogout"
+        },
+        "noAuth": true
+    },
+    {
+        "route": "/:controller/:id",
+        "method": "get",
+        "params": {
+            "controller": ":controller",
+            "action": "read",
+            "id": ":id"
+        }
+    },
+    {
+        "route": "/:controller",
+        "method": "get",
+        "params": {
+            "controller": ":controller",
+            "action": "index"
+        }
+    },
+    {
+        "route": "/:controller",
+        "method": "post",
+        "params": {
+            "controller": ":controller",
+            "action": "create"
+        }
+    },
+    {
+        "route": "/:controller/:id",
+        "method": "put",
+        "params": {
+            "controller": ":controller",
+            "action": "update",
+            "id": ":id"
+        }
+    },
+    {
+        "route": "/:controller/:id",
+        "method": "patch",
+        "params": {
+            "controller": ":controller",
+            "action": "update",
+            "id": ":id"
+        }
+    },
+    {
+        "route": "/:controller/:id",
+        "method": "delete",
+        "params": {
+            "controller": ":controller",
+            "action": "delete",
+            "id": ":id"
+        }
+    },
+    {
+        "route": "/:controller/:id/stream",
+        "method": "get",
+        "params": {
+            "controller": "Stream",
+            "action": "list",
+            "id": ":id",
+            "scope": ":controller"
+        }
+    },
+    {
+        "route": "/:controller/:id/posts",
+        "method": "get",
+        "params": {
+            "controller": "Stream",
+            "action": "listPosts",
+            "id": ":id",
+            "scope": ":controller"
+        }
+    },
+    {
+        "route": "/:controller/:id/subscription",
+        "method": "put",
+        "params": {
+            "controller": ":controller",
+            "id": ":id",
+            "action": "follow"
+        }
+    },
+    {
+        "route": "/:controller/:id/subscription",
+        "method": "delete",
+        "params": {
+            "controller": ":controller",
+            "id": ":id",
+            "action": "unfollow"
+        }
+    },
+    {
+        "route": "/:controller/:id/:link",
+        "method": "get",
+        "params": {
+            "controller": ":controller",
+            "action": "listLinked",
+            "id": ":id",
+            "link": ":link"
+        }
+    },
+    {
+        "route": "/:controller/:id/:link",
+        "method": "post",
+        "params": {
+            "controller": ":controller",
+            "action": "createLink",
+            "id": ":id",
+            "link": ":link"
+        }
+    },
+    {
+        "route": "/:controller/:id/:link",
+        "method": "delete",
+        "params": {
+            "controller": ":controller",
+            "action": "removeLink",
+            "id": ":id",
+            "link": ":link"
+        }
+    }
+]

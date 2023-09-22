@@ -1,0 +1,51 @@
+{
+  "fields": {
+    "name": "Nome",
+    "accountRole": "Titolo",
+    "accounts": "Account",
+    "phoneNumber": "Telefono",
+    "accountType": "Tipo di Account",
+    "doNotCall": "Non chiamare",
+    "address": "Indirizzo",
+    "opportunityRole": "Ruolo Opportunità",
+    "description": "Descrizione",
+    "targetLists": "Liste di Destinazione",
+    "targetList": "Lista di Destinazione",
+    "originalLead": "Lead originale",
+    "acceptanceStatus": "Stato Accettazione",
+    "accountIsInactive": "Account inattivo",
+    "acceptanceStatusMeetings": "Stato Accettazione (Riunioni)",
+    "acceptanceStatusCalls": "Stato Accettazione (Chiamate)",
+    "title": "Titolo Account",
+    "hasPortalUser": "Ha un Utente Portale"
+  },
+  "links": {
+    "opportunities": "Opportunità",
+    "cases": "Ticket",
+    "targetLists": "Liste di Destinazione",
+    "campaignLogRecords": "Log campagna",
+    "campaign": "Campagna",
+    "account": "Account (Primario)",
+    "accounts": "Account",
+    "casesPrimary": "Ticket (Primario)",
+    "portalUser": "Utente Portale",
+    "originalLead": "Lead originale",
+    "documents": "Documenti",
+    "tasksPrimary": "Attività (espanso)",
+    "opportunitiesPrimary": "Opportunità (Primaria)"
+  },
+  "labels": {
+    "Create Contact": "Crea Contatto"
+  },
+  "options": {
+    "opportunityRole": {
+      "Decision Maker": "Responsabile",
+      "Evaluator": "Valutatore"
+    }
+  },
+  "presetFilters": {
+    "portalUsers": "Utenti Portale",
+    "notPortalUsers": "Utenti Non Portale",
+    "accountActive": "Attivo"
+  }
+}

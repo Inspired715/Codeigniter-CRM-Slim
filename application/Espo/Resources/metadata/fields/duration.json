@@ -1,0 +1,17 @@
+{
+    "params": [
+        {
+            "name": "default",
+            "type": "int"
+        },
+        {
+            "name": "options",
+            "type": "arrayInt"
+        }
+    ],
+    "notCreatable": true,
+    "notMergeable": true,
+    "fieldDefs": {
+        "type": "int"
+    }
+}

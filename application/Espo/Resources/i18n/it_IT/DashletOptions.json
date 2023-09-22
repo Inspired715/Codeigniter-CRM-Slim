@@ -1,0 +1,38 @@
+{
+  "fields": {
+    "title": "Titolo",
+    "dateFrom": "Data Da",
+    "dateTo": "Data A",
+    "autorefreshInterval": "Intervallo di Aggiornamento Automatico",
+    "displayRecords": "Record da Visualizzare",
+    "isDoubleHeight": "Altezza 2x",
+    "mode": "Modalità",
+    "enabledScopeList": "Cosa visualizzare",
+    "users": "Utenti",
+    "entityType": "Tipo di entità",
+    "primaryFilter": "Filtro primario",
+    "boolFilterList": "Filtri Aggiuntivi",
+    "sortBy": "Ordina (campo)",
+    "sortDirection": "Ordina (direzione)",
+    "dateFilter": "Filtro data",
+    "skipOwn": "Non mostrare i propri record",
+    "text": "Testo",
+    "folder": "Cartella"
+  },
+  "options": {
+    "mode": {
+      "agendaWeek": "Settimana (agenda)",
+      "basicWeek": "Settimana",
+      "month": "Mese",
+      "basicDay": "Giorno",
+      "agendaDay": "Giorno (agenda)",
+      "timeline": "Sequenza Temporale"
+    }
+  },
+  "messages": {
+    "selectEntityType": "Seleziona il tipo di entità nelle opzioni del dashlet."
+  },
+  "tooltips": {
+    "skipOwn": "Le azioni eseguite dal tuo account utente non verranno visualizzate."
+  }
+}

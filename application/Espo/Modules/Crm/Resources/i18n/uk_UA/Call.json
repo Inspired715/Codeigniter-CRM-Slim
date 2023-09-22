@@ -1,0 +1,50 @@
+{
+  "fields": {
+    "name": "Ім'я",
+    "parent": "Батько",
+    "status": "Статус",
+    "dateStart": "Дата початку",
+    "dateEnd": "Дата закінчення",
+    "direction": "Напрямок",
+    "duration": "Тривалість",
+    "description": "Опис",
+    "users": "Користувачі",
+    "contacts": "Контакти",
+    "leads": "Ліди",
+    "reminders": "Нагадування",
+    "account": "Контрагент",
+    "acceptanceStatus": "Статус підтвердження"
+  },
+  "options": {
+    "status": {
+      "Planned": "Заплановано",
+      "Held": "Проведено",
+      "Not Held": "Не проведено"
+    },
+    "direction": {
+      "Outbound": "Вихідний",
+      "Inbound": "Вхідний"
+    },
+    "acceptanceStatus": {
+      "None": "Нема",
+      "Accepted": "Прийнято",
+      "Declined": "Відхилено",
+      "Tentative": "Попереднє"
+    }
+  },
+  "massActions": {
+    "setHeld": "Позначити проведеним",
+    "setNotHeld": "Позначити непроведеним"
+  },
+  "labels": {
+    "Create Call": "Створити дзвінок",
+    "Set Held": "Позначити проведеним",
+    "Set Not Held": "Позначити непроведеним",
+    "Send Invitations": "Відправити запрошення"
+  },
+  "presetFilters": {
+    "planned": "Заплановано",
+    "held": "Проведено",
+    "todays": "Сьогоднішнє"
+  }
+}

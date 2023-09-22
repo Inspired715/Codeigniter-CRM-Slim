@@ -1,0 +1,54 @@
+{
+    "controller": "controllers/record",
+    "views": {
+        "list": "crm:views/knowledge-base-article/list"
+    },
+   "recordViews":{
+        "editQuick":"crm:views/knowledge-base-article/record/edit-quick",
+        "detailQuick":"crm:views/knowledge-base-article/record/detail-quick",
+        "detail":"crm:views/knowledge-base-article/record/detail",
+        "edit":"crm:views/knowledge-base-article/record/edit",
+        "list":"crm:views/knowledge-base-article/record/list"
+    },
+    "modalViews": {
+        "select": "crm:views/knowledge-base-article/modals/select-records"
+    },
+    "filterList": [
+        {
+            "name": "published",
+            "accessDataList": [
+                {
+                    "inPortalDisabled": true
+                }
+            ]
+        }
+    ],
+    "boolFilterList": [
+        {
+            "name": "onlyMy",
+            "accessDataList": [
+                {
+                    "inPortalDisabled": true
+                }
+            ]
+        }
+    ],
+    "relationshipPanels": {
+        "cases": {
+            "create": false,
+            "rowActionsView": "views/record/row-actions/relationship-view-and-unlink"
+        }
+    },
+    "additionalLayouts": {
+        "detailPortal": {
+            "type": "detail"
+        },
+        "detailSmallPortal": {
+            "type": "detail"
+        },
+        "listPortal": {
+            "type": "list"
+        }
+    },
+    "iconClass": "fas fa-book"
+}

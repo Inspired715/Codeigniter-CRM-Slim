@@ -1,0 +1,587 @@
+{
+    "fields": {
+        "userName": {
+            "type": "varchar",
+            "maxLength": 50,
+            "required": true,
+            "view": "views/user/fields/user-name",
+            "tooltip": true,
+            "fieldManagerParamList": [
+                "maxLength",
+                "tooltipText",
+                "inlineEditDisabled"
+            ],
+            "index": true,
+            "validatorClassNameList": [
+                "Espo\\Classes\\FieldValidators\\User\\UserName\\Valid"
+            ]
+        },
+        "name": {
+            "type": "personName",
+            "view": "views/user/fields/name",
+            "dependeeAttributeList": [
+                "userName"
+            ]
+        },
+        "type": {
+            "type": "enum",
+            "options": ["regular", "admin", "portal", "system", "super-admin", "api"],
+            "default": "regular",
+            "maxLength": 24,
+            "index": true,
+            "inlineEditDisabled": true,
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "fieldManagerParamList": [
+                "tooltipText"
+            ]
+        },
+        "password": {
+            "type": "password",
+            "maxLength": 150,
+            "internal": true,
+            "utility": true,
+            "directAccessDisabled": true,
+            "fieldManagerParamList": [
+                "tooltipText"
+            ]
+        },
+        "passwordConfirm": {
+            "type": "password",
+            "maxLength": 150,
+            "internal": true,
+            "utility": true,
+            "notStorable": true,
+            "directAccessDisabled": true,
+            "fieldManagerParamList": []
+        },
+        "authMethod": {
+            "type": "enum",
+            "options": ["", "ApiKey", "Hmac"],
+            "maxLength": 24,
+            "layoutMassUpdateDisabled": true,
+            "layoutDetailDisabled": true,
+            "layoutFiltersDisabled": true,
+            "layoutListDisabled": true,
+            "fieldManagerParamList": [
+                "tooltipText"
+            ]
+        },
+        "apiKey": {
+            "type": "varchar",
+            "maxLength": 100,
+            "readOnly": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutDetailDisabled": true,
+            "layoutFiltersDisabled": true,
+            "layoutListDisabled": true,
+            "fieldManagerParamList": [
+                "tooltipText"
+            ]
+        },
+        "secretKey": {
+            "type": "varchar",
+            "maxLength": 100,
+            "readOnly": true,
+            "notStorable": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutDetailDisabled": true,
+            "layoutFiltersDisabled": true,
+            "layoutListDisabled": true,
+            "fieldManagerParamList": [
+                "tooltipText"
+            ]
+        },
+        "salutationName": {
+            "type": "enum",
+            "options": ["", "Mr.", "Ms.", "Mrs.", "Dr."]
+        },
+        "firstName": {
+            "type": "varchar",
+            "maxLength": 100,
+            "suppressValidationList": ["required"]
+        },
+        "lastName": {
+            "type": "varchar",
+            "maxLength": 100,
+            "required": true,
+            "suppressValidationList": ["required"]
+        },
+        "isActive": {
+            "type": "bool",
+            "layoutDetailDisabled": true,
+            "tooltip": true,
+            "default": true,
+            "customizationAuditedDisabled": true
+        },
+        "title": {
+            "type": "varchar",
+            "maxLength": 100,
+            "pattern": "$noBadCharacters",
+            "customizationAuditedDisabled": true
+        },
+        "position": {
+            "type": "varchar",
+            "maxLength": 100,
+            "notStorable": true,
+            "where": {
+                "LIKE": {
+                    "whereClause": {
+                        "id=s": {
+                            "from": "TeamUser",
+                            "select": ["userId"],
+                            "whereClause": {
+                                "deleted": false,
+                                "role*": "{value}"
+                            }
+                        }
+                    }
+                },
+                "NOT LIKE": {
+                    "whereClause": {
+                        "id!=s": {
+                            "from": "TeamUser",
+                            "select": ["userId"],
+                            "whereClause": {
+                                "deleted": false,
+                                "role*": "{value}"
+                            }
+                        }
+                    }
+                },
+                "=": {
+                    "whereClause": {
+                        "id=s": {
+                            "from": "TeamUser",
+                            "select": ["userId"],
+                            "whereClause": {
+                                "deleted": false,
+                                "role": "{value}"
+                            }
+                        }
+                    }
+                },
+                "<>": {
+                    "whereClause": {
+                        "id=!s": {
+                            "from": "TeamUser",
+                            "select": ["userId"],
+                            "whereClause": {
+                                "deleted": false,
+                                "role": "{value}"
+                            }
+                        }
+                    }
+                },
+                "IS NULL": {
+                    "whereClause": {
+                        "NOT": {
+                            "EXISTS": {
+                                "from": "User",
+                                "fromAlias": "sq",
+                                "select": ["id"],
+                                "leftJoins": [
+                                    [
+                                        "teams",
+                                        "m",
+                                        {},
+                                        {"onlyMiddle": true}
+                                    ]
+                                ],
+                                "whereClause": {
+                                    "m.role!=": null,
+                                    "sq.id:": "user.id"
+                                }
+                            }
+                        }
+                    }
+                },
+                "IS NOT NULL": {
+                    "whereClause": {
+                        "EXISTS": {
+                            "from": "User",
+                            "fromAlias": "sq",
+                            "select": ["id"],
+                            "leftJoins": [
+                                [
+                                    "teams",
+                                    "m",
+                                    {},
+                                    {"onlyMiddle": true}
+                                ]
+                            ],
+                            "whereClause": {
+                                "m.role!=": null,
+                                "sq.id:": "user.id"
+                            }
+                        }
+                    }
+                }
+            },
+            "directUpdateDisabled": true,
+            "readOnly": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "layoutDetailDisabled": true,
+            "layoutListDisabled": true,
+            "textFilterDisabled": true,
+            "fieldManagerParamList": [
+                "tooltipText"
+            ]
+        },
+        "emailAddress": {
+            "type": "email",
+            "required": false,
+            "layoutMassUpdateDisabled": true
+        },
+        "phoneNumber": {
+            "type": "phone",
+            "typeList": ["Mobile", "Office", "Home", "Fax", "Other"],
+            "defaultType": "Mobile"
+        },
+        "token": {
+            "type": "varchar",
+            "notStorable": true,
+            "utility": true,
+            "customizationDisabled": true
+        },
+        "authTokenId": {
+            "type": "varchar",
+            "notStorable": true,
+            "utility": true,
+            "customizationDisabled": true
+        },
+        "authLogRecordId": {
+            "type": "varchar",
+            "notStorable": true,
+            "utility": true,
+            "customizationDisabled": true
+        },
+        "ipAddress": {
+            "type": "varchar",
+            "notStorable": true,
+            "utility": true,
+            "customizationDisabled": true
+        },
+        "defaultTeam": {
+            "type": "link",
+            "layoutDetailDisabled": true,
+            "tooltip": true,
+            "customizationAuditedDisabled": true
+        },
+        "acceptanceStatus": {
+            "type": "varchar",
+            "notStorable": true,
+            "exportDisabled": true,
+            "utility": true,
+            "fieldManagerParamList": []
+        },
+        "acceptanceStatusMeetings": {
+            "type": "enum",
+            "notStorable": true,
+            "directUpdateDisabled": true,
+            "layoutAvailabilityList": ["filters"],
+            "importDisabled": true,
+            "exportDisabled": true,
+            "view": "crm:views/lead/fields/acceptance-status",
+            "link": "meetings",
+            "column": "status",
+            "fieldManagerParamList": []
+        },
+        "acceptanceStatusCalls": {
+            "type": "enum",
+            "notStorable": true,
+            "directUpdateDisabled": true,
+            "layoutAvailabilityList": ["filters"],
+            "importDisabled": true,
+            "exportDisabled": true,
+            "view": "crm:views/lead/fields/acceptance-status",
+            "link": "calls",
+            "column": "status",
+            "fieldManagerParamList": []
+        },
+        "teamRole": {
+            "type": "varchar",
+            "notStorable": true,
+            "utility": true,
+            "fieldManagerParamList": []
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "tooltip": true,
+            "columns": {
+                "role": "userRole"
+            },
+            "additionalAttributeList": ["columns"],
+            "layoutDetailDisabled": true,
+            "view": "views/user/fields/teams",
+            "default": "javascript: return {teamsIds: []}"
+        },
+        "roles": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "tooltip": true
+        },
+        "portals": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutListDisabled": true,
+            "tooltip": true
+        },
+        "portalRoles": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "tooltip": true
+        },
+        "contact": {
+            "type": "link",
+            "layoutDetailDisabled": true,
+            "view": "views/user/fields/contact",
+            "fieldManagerParamList": [
+                "inlineEditDisabled",
+                "tooltipText"
+            ]
+        },
+        "accounts": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutListDisabled": true,
+            "fieldManagerParamList": [
+                "inlineEditDisabled",
+                "tooltipText"
+            ]
+        },
+        "account": {
+            "type": "link",
+            "notStorable": true,
+            "directAccessDisabled": true,
+            "foreignAccessDisabled": true,
+            "layoutDetailDisabled": true,
+            "layoutListDisabled": true,
+            "readOnly": true
+        },
+        "portal": {
+            "type": "link",
+            "notStorable": true,
+            "readOnly": true,
+            "utility": true
+        },
+        "avatar": {
+            "type": "image",
+            "view": "views/user/fields/avatar",
+            "layoutDetailDisabled": true,
+            "previewSize": "small",
+            "customizationAuditedDisabled": true
+        },
+        "sendAccessInfo": {
+            "type": "bool",
+            "notStorable": true,
+            "utility": true
+        },
+        "gender": {
+            "type": "enum",
+            "options": ["", "Male", "Female", "Neutral"]
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true,
+            "fieldManagerParamList": [
+                "useNumericFormat"
+            ]
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true,
+            "fieldManagerParamList": [
+                "useNumericFormat"
+            ]
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user",
+            "fieldManagerParamList": []
+        },
+        "dashboardTemplate": {
+            "type": "link",
+            "layoutDetailDisabled": true,
+            "layoutListDisabled": true,
+            "customizationAuditedDisabled": true
+        },
+        "workingTimeCalendar": {
+            "type": "link",
+            "layoutDetailDisabled": true,
+            "layoutListDisabled": true,
+            "customizationAuditedDisabled": true
+        },
+        "layoutSet": {
+            "type": "link",
+            "layoutDetailDisabled": true,
+            "layoutListDisabled": true,
+            "customizationAuditedDisabled": true,
+            "tooltip": true
+        },
+        "auth2FA": {
+            "type": "foreign",
+            "link": "userData",
+            "field": "auth2FA",
+            "readOnly": true,
+            "view": "views/fields/foreign-bool"
+        },
+        "userData": {
+            "type": "linkOne",
+            "utility": true,
+            "customizationDisabled": true
+        },
+        "lastAccess": {
+            "type": "datetime",
+            "notStorable": true,
+            "readOnly": true,
+            "layoutListDisabled": true,
+            "layoutFiltersDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutDetailDisabled": true,
+            "directAccessDisabled": true,
+            "exportDisabled": true
+        },
+        "deleteId": {
+            "type": "varchar",
+            "maxLength": 17,
+            "readOnly": true,
+            "notNull": true,
+            "default": "0",
+            "utility": true,
+            "customizationDisabled": true
+        }
+    },
+    "links": {
+        "defaultTeam": {
+            "type": "belongsTo",
+            "entity": "Team"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "foreign": "users",
+            "additionalColumns": {
+                "role": {
+                    "type": "varchar",
+                    "len": 100
+                }
+            },
+            "layoutRelationshipsDisabled": true,
+            "columnAttributeMap": {
+                "role": "teamRole"
+            }
+        },
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "roles": {
+            "type": "hasMany",
+            "entity": "Role",
+            "foreign": "users",
+            "layoutRelationshipsDisabled": true
+        },
+        "portals": {
+            "type": "hasMany",
+            "entity": "Portal",
+            "foreign": "users",
+            "layoutRelationshipsDisabled": true
+        },
+        "portalRoles": {
+            "type": "hasMany",
+            "entity": "PortalRole",
+            "foreign": "users",
+            "layoutRelationshipsDisabled": true
+        },
+        "dashboardTemplate": {
+            "type": "belongsTo",
+            "entity": "DashboardTemplate"
+        },
+        "workingTimeCalendar": {
+            "type": "belongsTo",
+            "entity": "WorkingTimeCalendar",
+            "noJoin": true
+        },
+        "workingTimeRanges": {
+            "type": "hasMany",
+            "foreign": "users",
+            "entity": "WorkingTimeRange"
+        },
+        "layoutSet": {
+            "type": "belongsTo",
+            "entity": "LayoutSet",
+            "noJoin": true
+        },
+        "preferences": {
+            "type": "hasOne",
+            "entity": "Preferences",
+            "noJoin": true
+        },
+        "userData": {
+            "type": "hasOne",
+            "entity": "UserData",
+            "foreign": "user",
+            "foreignName": "id"
+        },
+        "meetings": {
+            "type": "hasMany",
+            "entity": "Meeting",
+            "foreign": "users",
+            "columnAttributeMap": {
+                "status": "acceptanceStatus"
+            }
+        },
+        "calls": {
+            "type": "hasMany",
+            "entity": "Call",
+            "foreign": "users",
+            "columnAttributeMap": {
+                "status": "acceptanceStatus"
+            }
+        },
+        "emails": {
+            "type": "hasMany",
+            "entity": "Email",
+            "foreign": "users"
+        },
+        "notes": {
+            "type": "hasMany",
+            "entity": "Note",
+            "foreign": "users",
+            "layoutRelationshipsDisabled": true
+        },
+        "contact": {
+            "type": "belongsTo",
+            "entity": "Contact",
+            "foreign": "portalUser"
+        },
+        "accounts": {
+            "type": "hasMany",
+            "entity": "Account",
+            "foreign": "portalUsers",
+            "relationName": "AccountPortalUser"
+        },
+        "tasks": {
+            "type": "hasMany",
+            "entity": "Task",
+            "foreign": "assignedUser"
+        }
+    },
+    "collection": {
+        "orderBy": "userName",
+        "order": "asc",
+        "textFilterFields": ["name", "userName", "emailAddress"]
+    },
+    "indexes": {
+        "userNameDeleteId": {
+            "type": "unique",
+            "columns": [
+                "userName",
+                "deleteId"
+            ]
+        }
+    }
+}

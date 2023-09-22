@@ -1,0 +1,17 @@
+{
+  "links": {
+    "users": "Пользователи"
+  },
+  "labels": {
+    "Access": "Доступ",
+    "Create PortalRole": "Создать роль портала",
+    "Scope Level": "Область видимости",
+    "Field Level": "Поле видимости"
+  },
+  "fields": {
+    "exportPermission": "Разрешение на экспорт",
+    "massUpdatePermission": "Разрешение на массовое обновление",
+    "data": "Данные",
+    "fieldData": "Полевые данные"
+  }
+}

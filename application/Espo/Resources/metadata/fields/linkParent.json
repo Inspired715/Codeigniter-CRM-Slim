@@ -1,0 +1,45 @@
+{
+    "params": [
+        {
+            "name": "required",
+            "type": "bool",
+            "default": false
+        },
+        {
+            "name": "entityList",
+            "type": "multiEnum",
+            "view": "views/admin/field-manager/fields/entity-list"
+        },
+        {
+            "name": "audited",
+            "type": "bool"
+        },
+        {
+            "name": "readOnly",
+            "type": "bool",
+            "tooltip": "linkReadOnly"
+        }
+    ],
+    "actualFields": [
+        "id",
+        "type"
+    ],
+    "notActualFields": [
+        "name"
+    ],
+    "converterClassName": "Espo\\Core\\Utils\\Database\\Orm\\FieldConverters\\LinkParent",
+    "validationList": [
+        "required",
+        "pattern",
+        "valid"
+    ],
+    "mandatoryValidationList": [
+        "pattern",
+        "valid"
+    ],
+    "filter": true,
+    "notCreatable": true,
+
+    "valueFactoryClassName": "Espo\\Core\\Field\\LinkParent\\LinkParentFactory",
+    "attributeExtractorClassName": "Espo\\Core\\Field\\LinkParent\\LinkParentAttributeExtractor"
+}

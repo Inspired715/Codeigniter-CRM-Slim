@@ -1,0 +1,28 @@
+{
+  "fields": {
+    "user": "Kullanıcı",
+    "action": "Eylem",
+    "createdAt": "Tarih",
+    "target": "Hedef",
+    "targetType": "Hedef Tipi",
+    "ipAddress": "IP Adresi",
+    "authLogRecord": "Kimlik Doğrulama Kaydı",
+    "userType": "Kullanıcı Tipi"
+  },
+  "links": {
+    "user": "Kullanıcı",
+    "target": "Hedef",
+    "authLogRecord": "Kimlik Doğrulama Kaydı"
+  },
+  "presetFilters": {
+    "onlyMy": "Sadece Benim"
+  },
+  "options": {
+    "action": {
+      "read": "Oku",
+      "update": "Güncelle",
+      "delete": "Sil",
+      "create": "Oluştur"
+    }
+  }
+}

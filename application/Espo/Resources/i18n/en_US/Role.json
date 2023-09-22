@@ -1,0 +1,65 @@
+{
+    "fields": {
+        "name": "Name",
+        "roles": "Roles",
+        "assignmentPermission": "Assignment Permission",
+        "userPermission": "User Permission",
+        "messagePermission": "Message Permission",
+        "portalPermission": "Portal Permission",
+        "groupEmailAccountPermission": "Group Email Account Permission",
+        "exportPermission": "Export Permission",
+        "massUpdatePermission": "Mass Update Permission",
+        "followerManagementPermission": "Follower Management Permission",
+        "dataPrivacyPermission": "Data Privacy Permission",
+        "data": "Data",
+        "fieldData": "Field Data"
+    },
+    "links": {
+        "users": "Users",
+        "teams": "Teams"
+    },
+    "tooltips": {
+        "messagePermission": "Allows to send messages to other users.\n\n* all – can send to all\n* team – can send only to teammates\n* no – cannot send",
+        "assignmentPermission": "Allows to assign records to other users.\n\n* all – no restriction\n* team – can assign only to teammates\n* no – can assign only to self",
+        "userPermission": "Allows view activities, calendar and stream of other users.\n\n* all – can view all\n* team – can view activities of teammates only\n* no – can't view",
+        "portalPermission": "Access to portal information, the ability to post messages to portal users.",
+        "groupEmailAccountPermission": "Access to group email accounts, the ability to send emails from group SMTP.",
+        "exportPermission": "Allows to export records.",
+        "massUpdatePermission": "The ability to perform mass update of records.",
+        "followerManagementPermission": "Allows to manage followers of specific records.",
+        "dataPrivacyPermission": "Allows to view and erase personal data."
+    },
+    "labels": {
+        "Access": "Access",
+        "Create Role": "Create Role",
+        "Scope Level": "Scope Level",
+        "Field Level": "Field Level"
+    },
+    "options": {
+        "accessList": {
+            "not-set": "not-set",
+            "enabled": "enabled",
+            "disabled": "disabled"
+        },
+        "levelList": {
+            "all": "all",
+            "team": "team",
+            "account": "account",
+            "contact": "contact",
+            "own": "own",
+            "no": "no",
+            "yes": "yes",
+            "not-set": "not-set"
+        }
+    },
+    "actions": {
+        "read": "Read",
+        "edit": "Edit",
+        "delete": "Delete",
+        "stream": "Stream",
+        "create": "Create"
+    },
+    "messages": {
+        "changesAfterClearCache": "All changes in an access control will be applied after cache is cleared."
+    }
+}

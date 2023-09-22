@@ -1,0 +1,31 @@
+{
+    "fields": {
+        "exportAllFields": "Export all fields",
+        "fieldList": "Field List",
+        "format": "Format",
+        "status": "Status",
+        "xlsxLite": "Lite",
+        "xlsxRecordLinks": "Record Links",
+        "xlsxTitle": "Title"
+    },
+    "options": {
+        "format": {
+            "csv": "CSV",
+            "xlsx": "XLSX (Excel)"
+        },
+        "status": {
+            "Pending": "Pending",
+            "Running": "Running",
+            "Success": "Success",
+            "Failed": "Failed"
+        }
+    },
+    "tooltips": {
+        "xlsxLite": "Consumes much less memory. Recommended if a big number of records is exported.",
+        "xlsxTitle": "Print a title and current date in the header."
+    },
+    "messages": {
+        "exportProcessed": "Export has been processed. Download the [file]({url}).",
+        "infoText": "The export is being processed in idle by cron. It can take some time to finish. Closing this modal dialog won't affect the execution process."
+    }
+}

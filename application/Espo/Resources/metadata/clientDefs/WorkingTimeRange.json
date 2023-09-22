@@ -1,0 +1,37 @@
+{
+    "controller": "controllers/record",
+    "viewSetupHandlers": {
+        "record/edit": "handlers/working-time-range"
+    },
+    "mergeDisabled": true,
+    "massUpdateDisabled": true,
+    "menu": {
+        "list": {
+            "buttons": [
+                {
+                    "name": "calendars",
+                    "label": "Calendars",
+                    "link": "#WorkingTimeCalendar"
+                }
+            ]
+        }
+    },
+    "dynamicLogic": {
+        "fields": {
+            "timeRanges": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "type",
+                            "value": "Working"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "filterList": [
+        "actual"
+    ]
+}

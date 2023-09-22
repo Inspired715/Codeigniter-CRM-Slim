@@ -1,0 +1,17 @@
+{
+  "links": {
+    "users": "Потребители"
+  },
+  "labels": {
+    "Access": "Достъп",
+    "Create PortalRole": "Създаване на роля за портал",
+    "Scope Level": "Ниво на обхват",
+    "Field Level": "Права за отделни полета"
+  },
+  "fields": {
+    "exportPermission": "Права за експортиране",
+    "massUpdatePermission": "Права за масови обновления",
+    "data": "Данни",
+    "fieldData": "Данни на полето"
+  }
+}

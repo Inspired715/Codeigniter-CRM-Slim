@@ -1,0 +1,19 @@
+{
+    "fields": {
+        "password": {
+            "internal": true
+        },
+        "smtpPassword": {
+            "internal": true
+        },
+        "imapHandler": {
+            "forbidden": true
+        },
+        "smtpHandler": {
+            "forbidden": true
+        },
+        "fetchData": {
+            "readOnly": true
+        }
+    }
+}

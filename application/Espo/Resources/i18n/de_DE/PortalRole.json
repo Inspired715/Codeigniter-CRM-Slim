@@ -1,0 +1,17 @@
+{
+  "links": {
+    "users": "Benutzer"
+  },
+  "labels": {
+    "Access": "Berechtigungen",
+    "Create PortalRole": "Portal Rolle erstellen",
+    "Scope Level": "Berechtigungsumfang",
+    "Field Level": "Feldebene"
+  },
+  "fields": {
+    "exportPermission": "Exportberechtigung",
+    "massUpdatePermission": "Massenänderungen Berechtigung",
+    "data": "Daten",
+    "fieldData": "Felddaten"
+  }
+}

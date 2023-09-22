@@ -1,0 +1,29 @@
+{
+  "fields": {
+    "name": "Назва",
+    "status": "Статус",
+    "target": "Ціль",
+    "sentAt": "Дата відправки",
+    "attemptCount": "Спроби",
+    "emailAddress": "Електронна адреса",
+    "massEmail": "Масова розсилка",
+    "isTest": "Тестовий"
+  },
+  "links": {
+    "target": "Ціль",
+    "massEmail": "Масова розсилка"
+  },
+  "options": {
+    "status": {
+      "Pending": "Очікується",
+      "Sent": "Надісланий",
+      "Failed": "Невдало",
+      "Sending": "Відправлення"
+    }
+  },
+  "presetFilters": {
+    "pending": "Очікується",
+    "sent": "Надісланий",
+    "failed": "Невдало"
+  }
+}

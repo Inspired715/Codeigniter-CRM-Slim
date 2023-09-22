@@ -1,0 +1,58 @@
+{
+  "fields": {
+    "name": "Назва",
+    "status": "Статус",
+    "storeSentEmails": "Зберігати надіслані повідомлення",
+    "startAt": "Дата початку",
+    "fromAddress": "Адреса відправника",
+    "fromName": "Ім'я відправника",
+    "replyToAddress": "Адреса для відповіді",
+    "replyToName": "Ім'я для відповіді",
+    "campaign": "Кампанія",
+    "emailTemplate": "Шаблон листа",
+    "inboundEmail": "Поштова скринька",
+    "targetLists": "Цільові списки",
+    "excludingTargetLists": "Виключаючи цільові списки",
+    "optOutEntirely": "Цілковита відмова",
+    "smtpAccount": "SMTP Акаунт"
+  },
+  "links": {
+    "targetLists": "Цільові списки",
+    "excludingTargetLists": "Виключаючи цільові списки",
+    "queueItems": "Елементи черги",
+    "campaign": "Кампанія",
+    "emailTemplate": "Шаблон листа",
+    "inboundEmail": "Поштова скринька"
+  },
+  "options": {
+    "status": {
+      "Draft": "Проект",
+      "Pending": "Очікується",
+      "In Process": "В процесі",
+      "Complete": "Завершена",
+      "Canceled": "Скасована",
+      "Failed": "Невдало"
+    }
+  },
+  "labels": {
+    "Create MassEmail": "Створити масову розсилку",
+    "Send Test": "Відправити тест",
+    "System SMTP": "Система SMTP",
+    "system": "система",
+    "group": "група"
+  },
+  "messages": {
+    "selectAtLeastOneTarget": "Виберіть принаймні одного отримувача.",
+    "testSent": "Тестові електронні листи повинні бути відправлені"
+  },
+  "tooltips": {
+    "optOutEntirely": "Електронні адреси одержувачів, які зняли підписку, більше не будуть отримувати будь-яких масових електронних листів.",
+    "targetLists": "Хто має отримувати повідомлення",
+    "excludingTargetLists": "Хто не має отримувати повідомлень",
+    "storeSentEmails": "Електронні листи будуть зберігатися в CRM."
+  },
+  "presetFilters": {
+    "actual": "Актуальні",
+    "complete": "Виконані"
+  }
+}

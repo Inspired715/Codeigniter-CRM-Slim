@@ -1,0 +1,17 @@
+{
+    "fields": {
+        "exportPermission": "Export Permission",
+        "massUpdatePermission": "Mass Update Permission",
+        "data": "Data",
+        "fieldData": "Field Data"
+    },
+    "links": {
+        "users": "Users"
+    },
+    "labels": {
+        "Access": "Access",
+        "Create PortalRole": "Create Portal Role",
+        "Scope Level": "Scope Level",
+        "Field Level": "Field Level"
+    }
+}

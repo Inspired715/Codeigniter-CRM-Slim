@@ -1,0 +1,10 @@
+{
+  "fields": {
+    "type": "Tipo",
+    "optOut": "Escluso",
+    "invalid": "Invalido"
+  },
+  "presetFilters": {
+    "orphan": "Orfano"
+  }
+}

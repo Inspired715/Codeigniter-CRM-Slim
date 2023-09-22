@@ -1,0 +1,65 @@
+{
+  "labels": {
+    "Converted To": "Convertito in",
+    "Create Lead": "Crea Lead",
+    "Convert": "Converti",
+    "convert": "Converti"
+  },
+  "fields": {
+    "name": "Nome",
+    "title": "Titolo",
+    "website": "Sito Web",
+    "phoneNumber": "Telefono",
+    "accountName": "Azienda",
+    "doNotCall": "Non Chiamare",
+    "address": "Indirizzo",
+    "status": "Stato",
+    "source": "Provenienza",
+    "opportunityAmount": "Importo Opportunità",
+    "opportunityAmountConverted": "Importo Opportunità (convertito)",
+    "description": "Descrizione",
+    "createdContact": "Contatti",
+    "createdOpportunity": "Opportunità",
+    "campaign": "Campagna",
+    "targetLists": "Liste di Destinazione",
+    "targetList": "Lista di Destinazione",
+    "industry": "Settore",
+    "acceptanceStatus": "Stato Accettazione",
+    "opportunityAmountCurrency": "Valuta dell'importo della proposta",
+    "acceptanceStatusMeetings": "Stato Accettazione (Riunioni)",
+    "acceptanceStatusCalls": "Stato Accettazione (Chiamate)",
+    "convertedAt": "Convertito a"
+  },
+  "links": {
+    "targetLists": "Liste di Destinazione",
+    "campaignLogRecords": "Log campagna",
+    "campaign": "Campagna",
+    "createdContact": "Contatti",
+    "createdOpportunity": "Opportunità",
+    "cases": "Tickets",
+    "documents": "Documenti"
+  },
+  "options": {
+    "status": {
+      "New": "Nuovo",
+      "Assigned": "Assegnato",
+      "In Process": "In corso",
+      "Converted": "Convertito",
+      "Recycled": "Recuperato",
+      "Dead": "Fuori uso"
+    },
+    "source": {
+      "Call": "Chiamata",
+      "Existing Customer": "Cliente esistente",
+      "Public Relations": "Pubbliche relazioni",
+      "Web Site": "Sito Web",
+      "Campaign": "Campagna",
+      "Other": "Altro"
+    }
+  },
+  "presetFilters": {
+    "active": "Attivo",
+    "actual": "Attuale",
+    "converted": "Convertito"
+  }
+}

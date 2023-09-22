@@ -1,0 +1,25 @@
+{
+  "fields": {
+    "status": "Durum",
+    "executeTime": "Burda çalıştır",
+    "attempts": "Kalan hak",
+    "failedAttempts": "Başarısız denemeler",
+    "serviceName": "Servis",
+    "methodName": "Metod",
+    "scheduledJob": "İş planla",
+    "data": "Veri",
+    "method": "Metod",
+    "scheduledJobJob": "Zamanlanmış Görev Adı",
+    "number": "Numara",
+    "queue": "Kuyruk",
+    "job": "Görev"
+  },
+  "options": {
+    "status": {
+      "Pending": "Bekliyor",
+      "Success": "Başarılı",
+      "Running": "Çalışıyor",
+      "Failed": "Başarısız"
+    }
+  }
+}

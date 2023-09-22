@@ -1,0 +1,34 @@
+{
+    "fields": {
+        "hash": {
+            "forbidden": true,
+            "readOnly": true
+        },
+        "token": {
+            "forbidden": true,
+            "readOnly": true
+        },
+        "secret": {
+            "forbidden": true,
+            "readOnly": true
+        },
+        "portal": {
+            "readOnly": true
+        },
+        "user": {
+            "readOnly": true
+        },
+        "ipAddress": {
+            "readOnly": true
+        },
+        "lastAccess": {
+            "readOnly": true
+        },
+        "createdAt": {
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "readOnly": true
+        }
+    }
+}

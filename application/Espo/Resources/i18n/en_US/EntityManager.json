@@ -1,0 +1,100 @@
+{
+    "labels": {
+        "Fields": "Fields",
+        "Relationships": "Relationships",
+        "Layouts": "Layouts",
+        "Schedule": "Schedule",
+        "Log": "Log",
+        "Formula": "Formula"
+    },
+    "fields": {
+        "name": "Name",
+        "type": "Type",
+        "labelSingular": "Label Singular",
+        "labelPlural": "Label Plural",
+        "stream": "Stream",
+        "label": "Label",
+        "linkType": "Link Type",
+        "entity": "Entity",
+        "entityForeign": "Foreign Entity",
+        "linkForeign": "Foreign Link",
+        "link": "Link",
+        "labelForeign": "Foreign Label",
+        "sortBy": "Default Order (field)",
+        "sortDirection": "Default Order (direction)",
+        "relationName": "Middle Table Name",
+        "linkMultipleField": "Link Multiple Field",
+        "linkMultipleFieldForeign": "Foreign Link Multiple Field",
+        "disabled": "Disabled",
+        "textFilterFields": "Text Filter Fields",
+        "audited": "Audited",
+        "auditedForeign": "Foreign Audited",
+        "statusField": "Status Field",
+        "beforeSaveCustomScript": "Before Save Custom Script",
+        "beforeSaveApiScript": "API Before Save Script",
+        "color": "Color",
+        "kanbanViewMode": "Kanban View",
+        "kanbanStatusIgnoreList": "Ignored groups in Kanban view",
+        "iconClass": "Icon",
+        "countDisabled": "Disable record count",
+        "fullTextSearch": "Full-Text Search",
+        "parentEntityTypeList": "Parent Entity Types",
+        "foreignLinkEntityTypeList": "Foreign Links",
+        "optimisticConcurrencyControl": "Optimistic concurrency control",
+        "updateDuplicateCheck": "Duplicate check on update",
+        "duplicateCheckFieldList": "Duplicate check fields",
+        "layout": "Layout",
+        "author": "Author",
+        "module": "Module",
+        "version": "Version"
+    },
+    "options": {
+        "type": {
+            "": "None",
+            "Base": "Base",
+            "Person": "Person",
+            "CategoryTree": "Category Tree",
+            "Event": "Event",
+            "BasePlus": "Base Plus",
+            "Company": "Company"
+        },
+        "linkType": {
+            "manyToMany": "Many-to-Many",
+            "oneToMany": "One-to-Many",
+            "manyToOne": "Many-to-One",
+            "oneToOneRight": "One-to-One Right",
+            "oneToOneLeft": "One-to-One Left",
+            "parentToChildren": "Parent-to-Children",
+            "childrenToParent": "Children-to-Parent"
+        },
+        "sortDirection": {
+            "asc": "Ascending",
+            "desc": "Descending"
+        }
+    },
+    "messages": {
+        "nameIsAlreadyUsed": "Name '{name}' is already used.",
+        "nameIsNotAllowed": "Name '{name}' is not allowed.",
+        "nameIsTooLong": "Name is too long.",
+        "confirmRemove": "Are you sure you want to remove the entity type from the system?",
+        "entityCreated": "Entity has been created",
+        "linkAlreadyExists": "Link name conflict.",
+        "linkConflict": "Name conflict: link or field with the same name already exists.",
+        "beforeSaveCustomScript": "A script called every time before an entity is saved. Use for setting calculated fields.",
+        "beforeSaveApiScript": "A script called on create and update API requests before an entity is saved. Use for custom validation and duplicate checking."
+    },
+    "tooltips": {
+        "duplicateCheckFieldList": "Which fields to check when performing checking for duplicates.",
+        "updateDuplicateCheck": "Perform checking for duplicates when updating a record.",
+        "optimisticConcurrencyControl": "Prevents writing conflicts.",
+        "statusField": "Updates of this field are logged in stream.",
+        "textFilterFields": "Fields used by text search.",
+        "stream": "Whether entity has a Stream.",
+        "disabled": "Check if you don't need this entity in your system.",
+        "linkAudited": "Creating related record and linking with existing record will be logged in Stream.",
+        "linkMultipleField": "Link Multiple field provides a handy way to edit relations. Don't use it if you can have a large number of related records.",
+        "entityType": "Base Plus - has Activities, History and Tasks panels.\n\nEvent - available in Calendar and Activities panel.",
+        "countDisabled": "Total number won't be displayed on the list view. Can decrease loading time when the DB table is big.",
+        "fullTextSearch": "Running rebuild is required."
+    }
+}

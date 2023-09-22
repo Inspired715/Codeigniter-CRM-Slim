@@ -1,0 +1,12 @@
+{
+    "layouts": {
+        "detailConvert": "Convert Lead",
+        "listForAccount": "List (for Account)",
+        "listForContact": "List (for Contact)"
+    },
+    "templates": {
+        "invitation": "Invitation",
+        "cancellation": "Cancellation",
+        "reminder": "Reminder"
+    }
+}

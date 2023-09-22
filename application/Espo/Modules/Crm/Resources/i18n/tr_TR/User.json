@@ -1,0 +1,9 @@
+{
+  "links": {
+    "targetLists": "Hedef Listeler"
+  },
+  "fields": {
+    "acceptanceStatus": "Kabul Durumu",
+    "acceptanceStatusCalls": "Kabul Durumu (Aramalar)"
+  }
+}

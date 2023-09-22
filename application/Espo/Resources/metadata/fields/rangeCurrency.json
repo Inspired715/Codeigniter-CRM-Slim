@@ -1,0 +1,27 @@
+{
+    "actualFields": [
+        "from",
+        "to"
+    ],
+    "fields": {
+        "from": {
+            "type": "currency",
+            "layoutAvailabilityList": [
+                "filters",
+                "massUpdate"
+            ]
+        },
+        "to": {
+            "type": "currency",
+            "layoutAvailabilityList": [
+                "filters",
+                "massUpdate"
+            ]
+        }
+    },
+    "naming": "prefix",
+    "notMergeable": true,
+    "notCreatable": true,
+    "filter": false,
+    "skipOrmDefs": true
+}

@@ -1,0 +1,88 @@
+[
+    {
+        "rows": [
+            [
+                {"name":"emailAddress"},
+                {"name":"status"}
+            ],
+            [
+                {"name":"name"},
+                {"name":"replyToAddress"}
+            ],
+            [
+                {"name":"teams"},
+                false
+            ],
+            [
+                {"name":"addAllTeamUsers"},
+                false
+            ]
+        ],
+        "tabBreak": true,
+        "tabLabel": "$label:Main"
+    },
+    {
+        "rows": [
+            [{"name": "useImap"}, {"name":"fetchSince"}],
+            [
+                {"name":"host"}, {"name":"security"}
+            ],
+            [
+                {"name":"port"},{"name":"username"}
+            ],
+            [
+                {"name":"monitoredFolders"},{"name":"password"}
+            ],
+            [
+                {"name":"keepFetchedEmailsUnread"}, {"name":"storeSentEmails"}
+            ],
+            [
+                {"name":"groupEmailFolder"}, {"name":"sentFolder"}
+            ],
+            [{"name": "testConnection", "customLabel": null, "view": "views/inbound-email/fields/test-connection"}, false]
+        ],
+        "tabBreak": true,
+        "tabLabel": "$label:IMAP"
+    },
+    {
+        "label": "Actions",
+        "rows": [
+            [
+                {"name":"createCase"},
+                {"name":"reply"}
+            ],
+            [
+                {"name":"caseDistribution"},
+                {"name":"replyEmailTemplate"}
+            ],
+            [
+                {"name":"team"},
+                {"name":"replyFromAddress"}
+            ],
+            [
+                {"name":"targetUserPosition"},
+                {"name":"replyFromName"}
+            ],
+            [
+                {"name":"assignToUser"},
+                false
+            ]
+        ]
+    },
+    {
+        "rows": [
+            [{"name": "useSmtp"}, false],
+            [{"name": "smtpIsShared"}, {"name": "smtpIsForMassEmail"}],
+            [{"name": "smtpHost"}, {"name": "smtpSecurity"}],
+            [{"name": "smtpPort"}, {"name": "smtpAuth"}],
+            [{"name": "fromName"}, {"name": "smtpAuthMechanism"}],
+            [false, {"name": "smtpUsername"}],
+            [false, {"name": "smtpPassword"}],
+            [
+                {"name": "smtpTestSend", "customLabel": null, "view": "views/inbound-email/fields/test-send"}, false
+            ]
+        ],
+        "tabBreak": true,
+        "tabLabel": "$label:SMTP"
+    }
+]

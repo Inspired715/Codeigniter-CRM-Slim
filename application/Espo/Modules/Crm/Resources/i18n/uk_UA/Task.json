@@ -1,0 +1,55 @@
+{
+  "fields": {
+    "name": "Ім'я",
+    "parent": "Батько",
+    "status": "Статус",
+    "dateStart": "Дата початку",
+    "dateEnd": "Кінцева дата",
+    "dateStartDate": "Дата початку (цілий день)",
+    "dateEndDate": "Дата закінчення (цілий день)",
+    "priority": "Пріоритет",
+    "description": "Опис",
+    "isOverdue": "Прострочено",
+    "account": "Контрагент",
+    "dateCompleted": "Дата завершення",
+    "attachments": "Вкладення",
+    "reminders": "Нагадування",
+    "contact": "Контакт"
+  },
+  "links": {
+    "attachments": "Вкладення",
+    "account": "Контраґент",
+    "contact": "Контакт",
+    "email": "Електронна пошта"
+  },
+  "options": {
+    "status": {
+      "Not Started": "Не почалося",
+      "Started": "Почалося",
+      "Completed": "Завершено",
+      "Canceled": "Скасовано",
+      "Deferred": "Відкладено"
+    },
+    "priority": {
+      "Low": "Низький",
+      "Normal": "Нормальний",
+      "High": "Високий",
+      "Urgent": "Терміново"
+    }
+  },
+  "labels": {
+    "Create Task": "Створити завдання",
+    "Complete": "Завершити",
+    "overdue": "прострочений"
+  },
+  "presetFilters": {
+    "actual": "Актуальні",
+    "completed": "Завершені",
+    "todays": "Сьогоднішні",
+    "overdue": "Прострочені",
+    "deferred": "Відкладено"
+  },
+  "nameOptions": {
+    "replyToEmail": "Відповісти на електронну пошту"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "fields": {
+    "createdAt": "Data",
+    "targetType": "Tipo di Obiettivo",
+    "authToken": "Token di Autenticazione",
+    "authLogRecord": "Record Registro Autenticazioni",
+    "userType": "Tipologia di utente"
+  },
+  "links": {
+    "authToken": "Token di Autenticazione",
+    "authLogRecord": "Record Registro Autenticazioni"
+  },
+  "presetFilters": {
+    "onlyMy": "Solo il mio"
+  },
+  "options": {
+    "action": {
+      "read": "Leggere",
+      "update": "Aggiorna",
+      "delete": "Elimina",
+      "create": "Crea"
+    }
+  }
+}

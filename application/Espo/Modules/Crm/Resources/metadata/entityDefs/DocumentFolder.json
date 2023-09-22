@@ -1,0 +1,102 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "pattern": "$noBadCharacters"
+        },
+        "description": {
+            "type": "text"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true,
+            "fieldManagerParamList": [
+                "useNumericFormat"
+            ]
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true,
+            "fieldManagerParamList": [
+                "useNumericFormat"
+            ]
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "fieldManagerParamList": []
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "fieldManagerParamList": []
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        },
+        "parent": {
+            "type": "link"
+        },
+        "childList": {
+            "type": "jsonArray",
+            "notStorable": true
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "parent": {
+            "type": "belongsTo",
+            "foreign": "children",
+            "entity": "DocumentFolder"
+        },
+        "children": {
+            "type": "hasMany",
+            "foreign": "parent",
+            "entity": "DocumentFolder"
+        },
+        "documents": {
+            "type": "hasMany",
+            "foreign": "folder",
+            "entity": "Document"
+        }
+    },
+    "collection": {
+        "orderBy": "parent",
+        "order": "asc"
+    },
+    "additionalTables": {
+        "DocumentFolderPath": {
+            "attributes": {
+                "id": {
+                    "type": "id",
+                    "dbType": "integer",
+                    "len": 11,
+                    "autoincrement": true
+                },
+                "ascendorId": {
+                    "type": "foreignId",
+                    "index": true
+                },
+                "descendorId" : {
+                    "type": "foreignId",
+                    "index": true
+                }
+            }
+        }
+    }
+}

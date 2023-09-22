@@ -1,0 +1,20 @@
+{
+    "entity": true,
+    "layouts": true,
+    "tab": true,
+    "acl": true,
+    "aclPortal": "recordAllAccountContactOwnNo",
+    "module": "Crm",
+    "customizable": true,
+    "importable": true,
+    "notifications": true,
+    "calendar": true,
+    "activity": true,
+    "object": true,
+    "activityStatusList": ["Planned"],
+    "historyStatusList": ["Held", "Not Held"],
+    "completedStatusList": ["Held"],
+    "canceledStatusList": ["Not Held"],
+    "statusField": "status",
+    "statusFieldLocked": true
+}

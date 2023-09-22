@@ -1,0 +1,59 @@
+[
+    {
+        "rows":[
+            [
+                {"name":"emailAddress"},
+                {"name":"status"}
+            ],
+            [
+                {"name":"name"},
+                false
+            ]
+        ],
+        "tabBreak": true,
+        "tabLabel": "$label:Main"
+    },
+    {
+        "rows":[
+            [{"name": "useImap"}, {"name":"fetchSince"}],
+            [
+                {"name":"host"}, {"name":"security"}
+            ],
+            [
+                {"name":"port"},{"name":"username"}
+            ],
+            [
+                {"name":"monitoredFolders"},{"name":"password"}
+            ],
+            [
+                {"name":"emailFolder"}, {"name":"keepFetchedEmailsUnread"}
+            ],
+            [
+                false, {"name":"storeSentEmails"}
+            ],
+            [
+                false, {"name":"sentFolder"}
+            ],
+            [
+                {"name": "testConnection", "customLabel": null, "view": "views/email-account/fields/test-connection"}, false
+            ]
+        ],
+        "tabBreak": true,
+        "tabLabel": "$label:IMAP"
+    },
+    {
+        "rows": [
+            [{"name": "useSmtp"}, false],
+            [{"name": "smtpHost"}, {"name": "smtpSecurity"}],
+            [{"name": "smtpPort"}, {"name": "smtpAuth"}],
+            [false, {"name": "smtpAuthMechanism"}],
+            [false, {"name": "smtpUsername"}],
+            [false, {"name": "smtpPassword"}],
+            [
+                {"name": "smtpTestSend", "customLabel": null, "view": "views/email-account/fields/test-send"}, false
+            ]
+        ],
+        "tabBreak": true,
+        "tabLabel": "$label:SMTP"
+    }
+]

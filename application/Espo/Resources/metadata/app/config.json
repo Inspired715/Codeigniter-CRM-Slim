@@ -1,0 +1,143 @@
+{
+    "entityTypeListParamList": [
+        "tabList",
+        "quickCreateList",
+        "globalSearchEntityList",
+        "assignmentEmailNotificationsEntityList",
+        "assignmentNotificationsEntityList",
+        "calendarEntityList",
+        "streamEmailNotificationsEntityList",
+        "activitiesEntityList",
+        "historyEntityList",
+        "streamEmailNotificationsTypeList",
+        "emailKeepParentTeamsEntityList"
+    ],
+    "params": {
+        "isDeveloperMode": {
+            "readOnly": true
+        },
+        "clientSecurityHeadersDisabled": {
+            "readOnly": true
+        },
+        "clientCspDisabled": {
+            "readOnly": true
+        },
+        "clientCspScriptSourceList": {
+            "readOnly": true
+        },
+        "clientStrictTransportSecurityHeaderDisabled": {
+            "readOnly": true
+        },
+        "clientXFrameOptionsHeaderDisabled": {
+            "readOnly": true
+        },
+        "systemUserId": {
+            "level": "admin",
+            "readOnly": true
+        },
+        "smtpPassword": {
+            "level": "internal"
+        },
+        "awsS3Storage": {
+            "level": "system"
+        },
+        "defaultFileStorage": {
+            "level": "admin",
+            "readOnly": true
+        },
+        "smsProvider": {
+            "level": "admin"
+        },
+        "authAnotherUserDisabled": {
+            "level": "admin",
+            "readOnly": true
+        },
+        "workingTimeCalendar": {
+            "level": "admin"
+        },
+        "ldapPassword": {
+            "level": "internal"
+        },
+        "oidcClientId": {
+            "level": "admin"
+        },
+        "oidcClientSecret": {
+            "level": "internal"
+        },
+        "oidcAuthorizationEndpoint": {
+            "level": "admin"
+        },
+        "oidcTokenEndpoint": {
+            "level": "admin"
+        },
+        "oidcJwksEndpoint": {
+            "level": "admin"
+        },
+        "oidcJwksCachePeriod": {
+            "level": "admin"
+        },
+        "oidcJwtSignatureAlgorithmList": {
+            "level": "admin"
+        },
+        "oidcScopes": {
+            "level": "admin"
+        },
+        "oidcGroupClaim": {
+            "level": "admin"
+        },
+        "oidcCreateUser": {
+            "level": "admin"
+        },
+        "oidcUsernameClaim": {
+            "level": "admin"
+        },
+        "oidcTeamsIds": {
+            "level": "admin"
+        },
+        "oidcTeamsNames": {
+            "level": "admin"
+        },
+        "oidcTeamsColumns": {
+            "level": "admin"
+        },
+        "oidcSync": {
+            "level": "admin"
+        },
+        "oidcSyncTeams": {
+            "level": "admin"
+        },
+        "oidcFallback": {
+            "level": "admin"
+        },
+        "oidcAllowRegularUserFallback": {
+            "level": "admin"
+        },
+        "oidcAllowAdminUser": {
+            "level": "admin"
+        },
+        "oidcAuthorizationPrompt": {
+            "level": "admin"
+        },
+        "oidcAuthorizationMaxAge": {
+            "level": "admin"
+        },
+        "oidcLogoutUrl": {
+            "level": "admin"
+        },
+        "apiCorsAllowedMethodList": {
+            "level": "admin"
+        },
+        "apiCorsAllowedHeaderList": {
+            "level": "admin"
+        },
+        "apiCorsAllowedOriginList": {
+            "level": "admin"
+        },
+        "apiCorsMaxAge": {
+            "level": "admin"
+        },
+        "customExportManifest": {
+            "level": "admin"
+        }
+    }
+}

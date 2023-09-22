@@ -1,0 +1,65 @@
+{
+  "fields": {
+    "name": "Vārds/nosaukums",
+    "roles": "Lomas",
+    "assignmentPermission": "Piešķiršanas atļauja",
+    "userPermission": "Lietotāja atļauja",
+    "portalPermission": "Portāla atļauja",
+    "groupEmailAccountPermission": "Grupas e-pasta konta atļauja",
+    "exportPermission": "Eksportēt atļauju",
+    "dataPrivacyPermission": "Datu privātuma atļauja",
+    "massUpdatePermission": "Masu atjaunināšanas atļauja",
+    "followerManagementPermission": "Sekotāju pārvaldības atļauja",
+    "data": "Dati",
+    "fieldData": "Lauka dati",
+    "messagePermission": "Ziņojuma atļauja"
+  },
+  "links": {
+    "users": "Lietotāji",
+    "teams": "Grupas"
+  },
+  "labels": {
+    "Access": "Piekļuve",
+    "Create Role": "Izveidot lomu",
+    "Scope Level": "Tvēruma līmenis",
+    "Field Level": "Lauka līmenis"
+  },
+  "options": {
+    "accessList": {
+      "not-set": "nav iestatīts",
+      "enabled": "atļauts",
+      "disabled": "nav atļauts"
+    },
+    "levelList": {
+      "all": "visi",
+      "team": "grupa",
+      "account": "konts",
+      "contact": "kontakts",
+      "own": "savs",
+      "no": "nē",
+      "yes": "jā",
+      "not-set": "nav iestatīts"
+    }
+  },
+  "actions": {
+    "read": "Izlasīt",
+    "edit": "Rediģēt",
+    "delete": "Izdzēst",
+    "stream": "Straumēt",
+    "create": "Izveidot"
+  },
+  "messages": {
+    "changesAfterClearCache": "Visas piekļuves vadības izmaiņas stāsies spēkā pēc kešatmiņas notīrīšanas."
+  },
+  "tooltips": {
+    "dataPrivacyPermission": "Ļauj skatīt un dzēst personas datus.",
+    "followerManagementPermission": "Ļauj pārvaldīt konkrētu ierakstu sekotājus.",
+    "messagePermission": "Ļauj sūtīt ziņojumus citiem lietotājiem.\n\n* visiem - var sūtīt visiem\n* komanda - var sūtīt tikai komandas biedriem\n* nē - nevar sūtīt",
+    "assignmentPermission": "Ļauj piešķirt ierakstus citiem lietotājiem.\n\n* visi - bez ierobežojuma\n* komanda - var piešķirt tikai komandas biedriem\n* nē - var piešķirt tikai sev",
+    "userPermission": "Ļauj apskatīt citu lietotāju aktivitātes, kalendāru un plūsmu.\n\n* visi - var apskatīt visus\n* komanda - var apskatīt tikai komandas biedru aktivitātes.\n* nē - nevar skatīt",
+    "portalPermission": "Piekļuve portāla informācijai, iespēja publicēt ziņojumus portāla lietotājiem.",
+    "groupEmailAccountPermission": "Piekļuve grupas e-pasta kontiem, iespēja sūtīt e-pastus no grupas SMTP.",
+    "exportPermission": "Ļauj eksportēt ierakstus.",
+    "massUpdatePermission": "Iespēja veikt ierakstu masveida atjaunināšanu."
+  }
+}

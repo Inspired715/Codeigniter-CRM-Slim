@@ -1,0 +1,36 @@
+{
+  "fields": {
+    "name": "Nome",
+    "status": "Stato",
+    "scheduling": "Programmazione"
+  },
+  "labels": {
+    "Create ScheduledJob": "Crea un Lavoro Programmato",
+    "As often as possible": "Il più spesso possibile"
+  },
+  "options": {
+    "job": {
+      "Cleanup": "Pulizia",
+      "CheckInboundEmails": "Controllo Caselle Email Condivise",
+      "CheckEmailAccounts": "Controllo Caselle Email Personali",
+      "SendEmailReminders": "Invio Promemoria via Email",
+      "AuthTokenControl": "Controllo Token di Autenticazione",
+      "SendEmailNotifications": "Invio Notifiche Email",
+      "CheckNewVersion": "Controllo Nuove Versioni",
+      "ProcessWebhookQueue": "Elaborazione Coda Webhook"
+    },
+    "cronSetup": {
+      "linux": "Nota: aggiungi questa riga al file crontab per eseguire le attività pianificate di EspoCRM:",
+      "mac": "Nota: aggiungi questa riga al file crontab per eseguire le attività pianificate di EspoCRM:",
+      "windows": "Nota: crea un file batch con i seguenti comandi per eseguire le attività pianificate di EspoCRM utilizzando Operazioni pianificate di Windows:",
+      "default": "Nota: Aggiungi questo comando a Cron Job (Operazioni pianificate):"
+    },
+    "status": {
+      "Active": "Attivo",
+      "Inactive": "Inattivo"
+    }
+  },
+  "tooltips": {
+    "scheduling": "Notazione Crontab. Definisce la frequenza di esecuzione del job.\n\n`*/5 * * * *` - ogni 5 minuti\n\n`0 */2 * * * *` - ogni 2 ore\n\n`30 1 * * * *` - alle 01:30 una volta al giorno\n\n`0 0 1 * * *` - il primo giorno del mese"
+  }
+}
